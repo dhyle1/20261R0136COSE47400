@@ -1,0 +1,4 @@
+torchvision>=0.15\
+pandas>=1.5\
+Pillow>=9.0\
+scikit-learn>=1.2}

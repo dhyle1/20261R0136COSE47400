@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+posters/
+datasets/
+*.pth
+.DS_Store
