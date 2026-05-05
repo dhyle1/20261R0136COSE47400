@@ -1,29 +1,28 @@
-# Movie Poster Genre Classification (Baseline)
+# Baseline: CNN Model
 
 ## Overview
-This project implements a baseline CNN model for multi-label movie genre classification using poster images.
+This is a baseline convolutional neural network for multi-label movie genre classification.
 
-## Setup
-pip install -r requirements.txt
-
-## Train
-python train.py
-
-## Evaluate
-python evaluate.py
+## Data
+- Input: movie poster images
+- Labels: multiple genres per movie
 
 ## Model
 - Custom CNN (PosterCNN)
 - Loss: BCEWithLogitsLoss
+
+## Training
+python train.py
+
+## Evaluation
+python evaluate.py
 
 ## Metrics
 - Micro F1
 - Macro F1
 - Top-3 accuracy
 
-## Note
-Dataset and poster images are not included due to size.
-
-To run the project, place:
-- CSV files in `datasets/`
-- Images in `posters/`
+## Notes
+- Dataset and images are not included in the repository
+- Place CSV files in `datasets/`
+- Place images in `posters/`
