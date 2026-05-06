@@ -1,9 +1,10 @@
 import torch
+from sklearn.metrics import f1_score
 from torch.utils.data import DataLoader, random_split
 from torchvision import transforms
+
 from dataset import PosterDataset
 from model import PosterCNN
-from sklearn.metrics import f1_score
 
 
 def train():

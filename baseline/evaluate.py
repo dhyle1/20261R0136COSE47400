@@ -1,7 +1,8 @@
 import torch
-from torch.utils.data import DataLoader
 from sklearn.metrics import f1_score
+from torch.utils.data import DataLoader
 from torchvision import transforms
+
 from dataset import PosterDataset
 from model import PosterCNN
 
