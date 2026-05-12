@@ -65,7 +65,7 @@ text_tokens = clip.tokenize(text_prompt).to(device)
 
 print(f"inferencing...")
 ture_label = test_df[TARGET_GENRES].values
-pred_label = []
+all_logits = []
 with torch.no_grad():
     for index, row in tqdm(test_df.iterrows(), total=len(test_df)):
         img_path = os.path.join(IMG_FOLDER, row["img_filename"])
@@ -73,6 +73,30 @@ with torch.no_grad():
         img_input = preprocess(img).unsqueeze(0).to(device)
         img_feature = model.encode_image(img_input)
         text_feature = model.encode_text(text_tokens)
+        
+        img_feature /= img_feature.norm(dim=-1, keepdim=True)
+        text_feature /= text_feature.norm(dim=-1, keepdim=True)
+        logits = 100.0 * img_feature @ text_feature.T 
+
+        all_logits.append(logits[0].cpu().numpy())
+all_logits = np.array(all_logits)
+
+threshold_candidates = np.array([0.05, 0.1, 0.15, 0.2])
+best_macro = 0
+best_preds = None
+for threshold in threshold_candidates:
+    preds = (all_logits > threshold).astype(int)
+    macro = f1_score(ture_label, preds, average="macro")
+    if macro > best_macro:
+        best_macro = macro
+        best_threshold = threshold
+        best_preds = preds
+print(f'best threshold: {best_threshold}')
+print(f"best macro_f1: {round(best_macro, 4)}")
+macro_f1 = f1_score(ture_label, best_preds, average="macro")
+micro_f1 = f1_score(ture_label, best_preds, average="micro")
+print(f"Final Maco_f1: {round(macro_f1, 4)}")
+print(f"Final Mico_f1: {round(micro_f1, 4)}")
         
         img_feature /= img_feature.norm(dim=-1, keepdim=True)
         text_feature /= text_feature.norm(dim=-1, keepdim=True)
