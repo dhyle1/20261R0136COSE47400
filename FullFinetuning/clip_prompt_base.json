@@ -1,0 +1,83 @@
+{
+  "templates": {
+    "base": "a movie poster of {genre} file",
+    "officical": "an official movie poster for a {genre_text} film",
+    "official": "official movie poster for (genre_text) film",
+    "cinematic": "cinematic movie poster, {genre_text}, high quality design"
+  },
+  "genre_combine_rules": {
+    "1 genre": "{g1}",
+    "2 genre": "{g2}",
+    "3 genre": "{g3}",
+    "4+ genre": "{g1},{g2},{g3} and other genres"
+  },
+  "genre_list": [
+    "Drama",
+    "Comedy",
+    "Romance",
+    "Crime",
+    "Short",
+    "Adventure",
+    "Mystery",
+    "Horror",
+    "Musical ",
+    "Fantasy",
+    "Family ",
+    "Action",
+    "Western",
+    "History",
+    "War",
+    "Thriller",
+    "Animation",
+    "Biography",
+    "Documentary ",
+    "Sport"
+  ],
+  "label_map": {
+    "label2id": {
+      "Drama": 0,
+      "Comedy": 1,
+      "Romance": 2,
+      "Crime": 3,
+      "Short": 4,
+      "Adventure": 5,
+      "Mystery": 6,
+      "Horror": 7,
+      "Musical ": 8,
+      "Fantasy": 9,
+      "Family ": 10,
+      "Action": 11,
+      "Western": 12,
+      "History": 13,
+      "War": 14,
+      "Thriller": 15,
+      "Animation": 16,
+      "Biography": 17,
+      "Documentary ": 18,
+      "Sport": 19
+    },
+    "id2label": {
+      "Drama": 0,
+      "Comedy": 1,
+      "Romance": 2,
+      "Crime": 3,
+      "Short": 4,
+      "Adventure": 5,
+      "Mystery": 6,
+      "Horror": 7,
+      "Musical ": 8,
+      "Fantasy": 9,
+      "Family ": 10,
+      "Action": 11,
+      "Western": 12,
+      "History": 13,
+      "War": 14,
+      "Thriller": 15,
+      "Animation": 16,
+      "Biography": 17,
+      "Documentary ": 18,
+      "Sport": 19
+    },
+    "total_gernes": 20
+  }
+}

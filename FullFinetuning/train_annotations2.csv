@@ -1,0 +1,814 @@
+img_filename,imdbId,Title,Genre,Drama,Comedy,Romance,Crime,Short,Adventure,Mystery,Horror,Fantasy,Action,Western,History,War,Thriller,Animation,Biography,Sport,Music,Family,Sci-Fi,Film-Noir,Musical,Documentary
+24252.jpg,24252,Liebelei (1933),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+25164.jpg,25164,The Gay Divorcee (1934),Comedy|Musical|Romance,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+17350.jpg,17350,The Scarlet Letter (1926),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+25586.jpg,25586,Of Human Bondage (1934),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22879.jpg,22879,A Farewell to Arms (1932),Drama|Romance|War,1,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+23969.jpg,23969,Duck Soup (1933),Comedy|Musical|War,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0
+22100.jpg,22100,M (1931),Crime|Drama|Mystery,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+18578.jpg,18578,Wings (1927),Drama|Romance|War,1,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+19729.jpg,19729,The Broadway Melody (1929),Drama|Musical|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+20629.jpg,20629,All Quiet on the Western Front (1930),Drama|War,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+21746.jpg,21746,Cimarron (1931),Drama|Western,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+22958.jpg,22958,Grand Hotel (1932),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+17136.jpg,17136,Metropolis (1927),Drama|Sci-Fi,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+19422.jpg,19422,Steamboat Willie (1928),Animation|Family|Comedy,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0
+25452.jpg,25452,The Man Who Knew Too Much (1934),Crime|Mystery|Thriller,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+24747.jpg,24747,Strauss' Great Waltz (1934),Biography|Music|Romance,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0
+23285.jpg,23285,Number 17 (1932),Crime|Mystery|Thriller,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+22395.jpg,22395,The Skin Game (1931),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+20852.jpg,20852,Elstree Calling (1930),Comedy|Musical,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+21015.jpg,21015,The Shame of Mary Boyle (1929),Comedy|Drama,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+21165.jpg,21165,Murder! (1930),Crime|Mystery|Thriller,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+20142.jpg,20142,The Manxman (1929),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+18876.jpg,18876,The Farmer's Wife (1928),Comedy|Drama|Romance,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+17825.jpg,17825,When Boys Leave Home (1927),Adventure|Drama|Thriller,1,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+17843.jpg,17843,Easy Virtue (1928),Romance|Thriller,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+18328.jpg,18328,The Ring (1927),Drama|Romance|Sport,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+16230.jpg,16230,The Pleasure Garden (1925),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+21814.jpg,21814,Dracula (1931),Fantasy|Horror,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+21884.jpg,21884,Frankenstein (1931),Drama|Horror|Sci-Fi,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+15693.jpg,15693,Cobra (1925),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+10418.jpg,10418,Male and Female (1919),Adventure|Drama,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+10726.jpg,10726,"Die Spinnen, 1. Teil - Der Goldene See (1919)",Adventure|Western,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+23369.jpg,23369,Rain (1932),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+17423.jpg,17423,Sparrows (1926),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+16630.jpg,16630,Battling Butler (1926),Comedy,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+17925.jpg,17925,The General (1926),Action|Adventure|Comedy,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+24852.jpg,24852,Babes in Toyland (1934),Comedy|Family|Fantasy,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+10040.jpg,10040,Daddy-Long-Legs (1919),Comedy|Drama,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+15863.jpg,15863,Go West (1925),Comedy|Western,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+24645.jpg,24645,Tarzan the Fearless (1933),Action|Adventure,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+14538.jpg,14538,Three Ages (1923),Comedy,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+20668.jpg,20668,The Bat Whispers (1930),Crime|Thriller|Horror,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+13662.jpg,13662,Tess of the Storm Country (1922),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+16332.jpg,16332,Seven Chances (1925),Comedy|Romance,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+20594.jpg,20594,With Byrd at the South Pole (1930),Documentary|Adventure,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+18773.jpg,18773,The Circus (1928),Comedy|Romance,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+21749.jpg,21749,City Lights (1931),Comedy|Drama|Romance,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+12349.jpg,12349,The Kid (1921),Comedy|Drama|Family,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+17416.jpg,17416,The Son of the Sheik (1926),Adventure|Drama|Romance,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+16640.jpg,16640,The Bells (1926),Crime|Drama|Horror,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+14624.jpg,14624,A Woman of Paris: A Drama of Fate (1923),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+15648.jpg,15648,Battleship Potemkin (1925),Drama|History,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+24184.jpg,24184,The Invisible Man (1933),Horror|Sci-Fi,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+16039.jpg,16039,The Lost World (1925),Adventure|Fantasy,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+16847.jpg,16847,Faust (1926),Drama|Fantasy|Horror,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+15064.jpg,15064,The Last Laugh (1924),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+13086.jpg,13086,Dr. Mabuse: The Gambler (1922),Crime|Mystery|Thriller,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+24264.jpg,24264,Little Women (1933),Drama|Family|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+20697.jpg,20697,The Blue Angel (1930),Drama|Music,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+24914.jpg,24914,Bright Eyes (1934),Comedy|Drama|Family,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+22599.jpg,22599,íó Nous la Libertí© (1931),Comedy|Musical,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+22458.jpg,22458,Tabu: A Story of the South Seas (1931),Drama|Romance|Adventure,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+19760.jpg,19760,Man with a Movie Camera (1929),Documentary|Music,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1
+20691.jpg,20691,The Big Trail (1930),Adventure|Western|Romance,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+25456.jpg,25456,Man of Aran (1934),Documentary,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+12532.jpg,12532,Orphans of the Storm (1921),Drama|History|Romance,1,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+10323.jpg,10323,The Cabinet of Dr. Caligari (1920),Fantasy|Horror|Mystery,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+9968.jpg,9968,Broken Blossoms or The Yellow Man and the Girl (1919),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24025.jpg,24025,Flying Down to Rio (1933),Comedy|Musical|Romance,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+22286.jpg,22286,The Public Enemy (1931),Action|Crime|Drama,1,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+4972.jpg,4972,The Birth of a Nation (1915),Drama|History|War,1,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0
+11841.jpg,11841,Way Down East (1920),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24034.jpg,24034,42nd Street (1933),Comedy|Musical|Romance,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+24166.jpg,24166,I'm No Angel (1933),Comedy|Musical|Romance,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+23027.jpg,23027,Horse Feathers (1932),Comedy|Musical|Romance,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+22268.jpg,22268,Platinum Blonde (1931),Comedy|Romance,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+6864.jpg,6864,Intolerance: Love's Struggle Throughout the Ages (1916),Drama|History,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+18033.jpg,18033,It (1927),Comedy|Romance,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+13140.jpg,13140,Foolish Wives (1922),Drama|Thriller,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+15400.jpg,15400,The Thief of Bagdad (1924),Adventure|Family|Fantasy,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+16654.jpg,16654,The Black Pirate (1926),Adventure|Action,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+20640.jpg,20640,Animal Crackers (1930),Comedy|Musical,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+23694.jpg,23694,White Zombie (1932),Horror,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+17668.jpg,17668,Berlin: Symphony of a Great City (1927),Documentary,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+13372.jpg,13372,Manslaughter (1922),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+18455.jpg,18455,Sunrise (1927),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24368.jpg,24368,Mystery of the Wax Museum (1933),Horror|Mystery|Thriller,0,0,0,0,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+14429.jpg,14429,Safety Last! (1923),Comedy|Thriller,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+24481.jpg,24481,Queen Christina (1933),Biography|Drama|History,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0
+17765.jpg,17765,College (1927),Comedy|Drama|Sport,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+23238.jpg,23238,The Most Dangerous Game (1932),Adventure|Horror|Mystery,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+20827.jpg,20827,The Divorcee (1930),Romance|Drama,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+18054.jpg,18054,The King of Kings (1927),Biography|Drama|History,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0
+22913.jpg,22913,Freaks (1932),Drama|Horror,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+8133.jpg,8133,The Immigrant (1917),Short|Comedy|Drama,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+20641.jpg,20641,Anna Christie (1930),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22835.jpg,22835,Dr. Jekyll and Mr. Hyde (1931),Horror|Sci-Fi,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+24803.jpg,24803,Zero for Conduct (1933),Short|Comedy|Drama,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+14341.jpg,14341,Our Hospitality (1923),Comedy|Romance|Thriller,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+23194.jpg,23194,The Mask of Fu Manchu (1932),Adventure|Horror|Sci-Fi,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+11130.jpg,11130,Dr. Jekyll and Mr. Hyde (1920),Drama|Horror|Sci-Fi,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+11237.jpg,11237,The Golem (1920),Fantasy|Horror,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+12304.jpg,12304,The Idle Class (1921),Short|Comedy,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+12364.jpg,12364,Kí_rkarlen (1921),Drama|Fantasy|Horror,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+12675.jpg,12675,The Sheik (1921),Adventure|Drama|Romance,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+13257.jpg,13257,Hí_xan (1922),Documentary|Fantasy|Horror,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+13367.jpg,13367,The Man from Beyond (1922),Mystery,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+14142.jpg,14142,The Hunchback of Notre Dame (1923),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+14611.jpg,14611,Why Worry? (1923),Adventure|Comedy|Family,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+14972.jpg,14972,He Who Gets Slapped (1924),Drama|Romance|Thriller,1,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+15119.jpg,15119,The Marriage Circle (1924),Comedy,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+15324.jpg,15324,Sherlock Jr. (1924),Action|Comedy|Romance,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+15624.jpg,15624,The Big Parade (1925),Drama|Romance|War,1,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+15841.jpg,15841,The Freshman (1925),Comedy|Family|Sport,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0
+15881.jpg,15881,Greed (1924),Drama|Thriller|Western,1,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+16220.jpg,16220,The Phantom of the Opera (1925),Horror,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+18037.jpg,18037,The Jazz Singer (1927),Drama|Music|Musical,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0
+18218.jpg,18218,Old San Francisco (1927),Drama|History|Romance,1,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+18528.jpg,18528,The Unknown (1927),Drama|Horror|Romance,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+18737.jpg,18737,Pandora's Box (1929),Crime|Drama|Romance,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+18742.jpg,18742,The Cameraman (1928),Comedy|Romance|Family,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+18770.jpg,18770,La chute de la maison Usher (1928),Horror,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+18806.jpg,18806,The Crowd (1928),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+19130.jpg,19130,The Man Who Laughs (1928),Drama|Horror|Mystery,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+19344.jpg,19344,Sadie Thompson (1928),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+19421.jpg,19421,"Steamboat Bill, Jr. (1928)",Action|Comedy|Drama,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+19644.jpg,19644,Applause (1929),Drama|Musical,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+20530.jpg,20530,Un Chien Andalou (1929),Short|Fantasy|Horror,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+21079.jpg,21079,Little Caesar (1931),Action|Crime|Drama,1,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+22158.jpg,22158,Monkey Business (1931),Comedy|Musical,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+22208.jpg,22208,Night Nurse (1931),Crime|Drama|Mystery,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22718.jpg,22718,Boudu Saved from Drowning (1932),Comedy,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23037.jpg,23037,Las Hurdes (1933),Documentary|Short,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+23293.jpg,23293,The Old Dark House (1932),Comedy|Horror,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23374.jpg,23374,Rasputin and the Empress (1932),Biography|Drama|History,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0
+23427.jpg,23427,Scarface (1932),Action|Crime|Drama,1,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+23634.jpg,23634,"I Was Born, But... (1932)",Comedy|Drama,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23649.jpg,23649,Vampyr (1932),Fantasy|Horror,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23686.jpg,23686,What Price Hollywood? (1932),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24055.jpg,24055,The Ghoul (1933),Action|Drama|Horror,1,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+24069.jpg,24069,Gold Diggers of 1933 (1933),Comedy|Drama|Musical,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+24188.jpg,24188,Island of Lost Souls (1932),Horror|Sci-Fi,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+24240.jpg,24240,Lady for a Day (1933),Comedy,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24548.jpg,24548,She Done Him Wrong (1933),Comedy|Drama|History,1,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+24593.jpg,24593,The Son of Kong (1933),Adventure|Comedy|Fantasy,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24727.jpg,24727,The Vampire Bat (1933),Drama|Horror|Mystery,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24772.jpg,24772,Wild Boys of the Road (1933),Adventure|Drama,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24844.jpg,24844,L'Atalante (1934),Comedy|Drama|Romance,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24865.jpg,24865,The Barretts of Wimpole Street (1934),Biography|Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+24894.jpg,24894,The Black Cat (1934),Adventure|Crime|Horror,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+25301.jpg,25301,Imitation of Life (1934),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+25423.jpg,25423,The Lost Patrol (1934),Adventure|War,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+25493.jpg,25493,The Merry Widow (1934),Musical|Comedy|Romance,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+25410.jpg,25410,Little Miss Marker (1934),Comedy|Family|Drama,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+20960.jpg,20960,Hell's Angels (1930),Drama|War,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+24314.jpg,24314,The Mayor of Hell (1933),Crime|Drama|Romance,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24601.jpg,24601,Sons of the Desert (1933),Comedy,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+21156.jpg,21156,Morocco (1930),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23158.jpg,23158,Love Me Tonight (1932),Comedy|Musical|Romance,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+17739.jpg,17739,The Cat and the Canary (1927),Comedy|Horror|Mystery,0,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+21818.jpg,21818,The 3 Penny Opera (1931),Comedy|Drama|Musical,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+19412.jpg,19412,Speedy (1928),Action|Comedy|Family,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0
+20475.jpg,20475,Diary of a Lost Girl (1929),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+21571.jpg,21571,Zemlya (1930),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+25351.jpg,25351,Kiss and Make-Up (1934),Comedy|Musical|Romance,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+25580.jpg,25580,Now and Forever (1934),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24183.jpg,24183,International House (1933),Comedy,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+25318.jpg,25318,It's a Gift (1934),Comedy,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+25091.jpg,25091,Evelyn Prentice (1934),Drama|Mystery|Romance,1,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23551.jpg,23551,Tarzan the Ape Man (1932),Action|Adventure|Romance,0,0,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+15532.jpg,15532,Die Abenteuer des Prinzen Achmed (1926),Animation|Adventure|Fantasy,0,0,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+17448.jpg,17448,Tartuffe (1925),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+19959.jpg,19959,Hallelujah (1929),Drama|Musical,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+20686.jpg,20686,The Big House (1930),Crime|Drama|Thriller,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+23814.jpg,23814,The Bitter Tea of General Yen (1933),Drama|Romance|War,1,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+19585.jpg,19585,The Wind (1928),Drama|Romance|Western,1,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+13427.jpg,13427,Nanook of the North (1922),Documentary,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+23196.jpg,23196,Mata Hari (1931),Crime|Drama|Romance,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+15175.jpg,15175,Die Nibelungen: Siegfried (1924),Adventure|Drama|Fantasy,1,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+15174.jpg,15174,Die Nibelungen: Kriemhilds Rache (1924),Adventure|Drama|Fantasy,1,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24028.jpg,24028,Footlight Parade (1933),Comedy|Musical|Romance,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+12938.jpg,12938,Beyond the Rocks (1922),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22696.jpg,22696,Blessed Event (1932),Drama|Comedy,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22453.jpg,22453,Susan Lenox  (1931),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+20442.jpg,20442,Spite Marriage (1929),Comedy,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+25028.jpg,25028,Dames (1934),Comedy|Musical|Romance,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+13579.jpg,13579,Schatten - Eine ní_chtliche Halluzination (1923),Drama|Fantasy|Horror,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+11000.jpg,11000,Leaves From Satan's Book (1920),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24239.jpg,24239,Lady Killer (1933),Comedy|Crime,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+12763.jpg,12763,Tol'able David (1921),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23251.jpg,23251,The Music Box (1932),Comedy|Short,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23470.jpg,23470,The Sign of the Cross (1932),Drama|History,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+20269.jpg,20269,Piccadilly (1929),Drama|Crime,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24473.jpg,24473,The Private Life of Henry VIII. (1933),Biography|Comedy|Drama,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+8395.jpg,8395,Otets Sergiy (1918),Biography|Drama|History,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0
+24966.jpg,24966,Chapaev (1934),Biography|Comedy|Drama,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+24916.jpg,24916,Broadway Bill (1934),Comedy|Drama,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+21148.jpg,21148,Min and Bill (1930),Comedy|Drama,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23731.jpg,23731,"20,000 Years in Sing Sing (1932)",Crime|Drama|Film-Noir,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+14945.jpg,14945,Girl Shy (1924),Comedy|Romance,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22550.jpg,22550,Waterloo Bridge (1931),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23385.jpg,23385,Red-Headed Woman (1932),Comedy|Romance,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22626.jpg,22626,American Madness (1932),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+21331.jpg,21331,The Blood of a Poet (1932),Fantasy,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23382.jpg,23382,Red Dust (1932),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+11870.jpg,11870,Within Our Gates (1920),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+20815.jpg,20815,The Dawn Patrol (1930),War|Drama|Action,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0
+24353.jpg,24353,Morning Glory (1933),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23940.jpg,23940,Design for Living (1933),Comedy|Romance,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23236.jpg,23236,The Monster Walks (1932),Horror,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+13556.jpg,13556,Robin Hood (1922),Adventure|Family|Romance,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+19074.jpg,19074,"Laugh, Clown, Laugh (1928)",Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+11358.jpg,11358,Just Pals (1920),Comedy|Drama|Western,1,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+17463.jpg,17463,3 Bad Men (1926),Romance|Western,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+25004.jpg,25004,The Count of Monte Cristo (1934),Action|Adventure|Drama,1,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+18909.jpg,18909,Four Sons (1928),Drama|War,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+18972.jpg,18972,Hangman's House (1928),Drama|Romance|Thriller,1,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+20702.jpg,20702,Born Reckless (1930),Crime|Drama|Film-Noir,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+21508.jpg,21508,Up the River (1930),Comedy|Crime|Drama,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23955.jpg,23955,Doctor Bull (1933),Comedy|Drama|Romance,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+18192.jpg,18192,Napoleon (1927),Biography|Drama|History,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0
+23249.jpg,23249,Murders in the Rue Morgue (1932),Crime|Horror|Mystery,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23303.jpg,23303,One Hour with You (1932),Comedy|Musical|Romance,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+20030.jpg,20030,The Iron Mask (1929),Adventure|Drama|History,1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+24453.jpg,24453,Pilgrimage (1933),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+12752.jpg,12752,The Three Musketeers (1921),Action|Adventure|Romance,0,0,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+23236.jpg,23236,The Monster Walks (1932),Horror,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+13556.jpg,13556,Robin Hood (1922),Adventure|Family|Romance,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+19074.jpg,19074,"Laugh, Clown, Laugh (1928)",Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+15016.jpg,15016,The Iron Horse (1924),History|Romance|Western,0,0,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+11358.jpg,11358,Just Pals (1920),Comedy|Drama|Western,1,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+17463.jpg,17463,3 Bad Men (1926),Romance|Western,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+25004.jpg,25004,The Count of Monte Cristo (1934),Action|Adventure|Drama,1,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+18909.jpg,18909,Four Sons (1928),Drama|War,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+18972.jpg,18972,Hangman's House (1928),Drama|Romance|Thriller,1,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+20702.jpg,20702,Born Reckless (1930),Crime|Drama|Film-Noir,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+21508.jpg,21508,Up the River (1930),Comedy|Crime|Drama,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22353.jpg,22353,Seas Beneath (1931),Action|Drama|War,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0
+23955.jpg,23955,Doctor Bull (1933),Comedy|Drama|Romance,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+18192.jpg,18192,Napoleon (1927),Biography|Drama|History,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0
+22074.jpg,22074,The Smiling Lieutenant (1931),Comedy|Romance|Musical,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+23249.jpg,23249,Murders in the Rue Morgue (1932),Crime|Horror|Mystery,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23303.jpg,23303,One Hour with You (1932),Comedy|Musical|Romance,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+20030.jpg,20030,The Iron Mask (1929),Adventure|Drama|History,1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+24453.jpg,24453,Pilgrimage (1933),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+11439.jpg,11439,The Mark of Zorro (1920),Adventure|Romance|Western,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+12752.jpg,12752,The Three Musketeers (1921),Action|Adventure|Romance,0,0,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+19563.jpg,19563,West of Zanzibar (1928),Drama|Mystery,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+18471.jpg,18471,Tell It to the Marines (1926),Comedy|Drama|Romance,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+16473.jpg,16473,The Unholy Three (1925),Crime|Drama|Romance,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+21505.jpg,21505,The Unholy Three (1930),Crime|Drama|Romance,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+18097.jpg,18097,London After Midnight (1927),Horror,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+17048.jpg,17048,Kurutta ippÌ»ji (1926),Drama|Horror,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+6333.jpg,6333,"20,000 Leagues Under the Sea (1916)",Action|Adventure|Sci-Fi,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0
+11909.jpg,11909,The Affairs of Anatol (1921),Comedy|Drama,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+16939.jpg,16939,The Great K & A Train Robbery (1926),Western,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+17567.jpg,17567,The Winning of Barbara Worth (1926),Drama|Romance|Western,1,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+15758.jpg,15758,Don Q Son of Zorro (1925),Adventure|Romance,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+8874.jpg,8874,The Bell Boy (1918),Short|Comedy,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22694.jpg,22694,The Blue Light (1932),Drama|Fantasy|Mystery,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24262.jpg,24262,The Little Giant (1933),Comedy|Crime|Romance,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+18179.jpg,18179,Mr. Wu (1927),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+16655.jpg,16655,The Blackbird (1926),Crime|Drama|Romance,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23935.jpg,23935,The Death Kiss (1932),Comedy|Crime|Drama,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+25464.jpg,25464,Manhattan Melodrama (1934),Crime|Drama|Romance,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22753.jpg,22753,Chandu the Magician (1932),Action|Adventure|Fantasy,0,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+13075.jpg,13075,Dr. Jack (1922),Comedy,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+11293.jpg,11293,High and Dizzy (1920),Comedy|Short,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+12512.jpg,12512,Now or Never (1921),Comedy|Short,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+21408.jpg,21408,Soup to Nuts (1930),Comedy|Romance,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22681.jpg,22681,The Big Stampede (1932),Western,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+24873.jpg,24873,Belle of the Nineties (1934),Comedy|Drama,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+3643.jpg,3643,The Avenging Conscience: or 'Thou Shalt Not Kill' (1914),Crime|Drama,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24124.jpg,24124,His Private Secretary (1933),Comedy|Romance,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+19699.jpg,19699,The Black Watch (1929),Adventure|Drama,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22125.jpg,22125,Marius (1931),Comedy|Drama|Romance,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22877.jpg,22877,Fanny (1932),Comedy|Drama,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23590.jpg,23590,Three on a Match (1932),Crime|Drama|Romance,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22279.jpg,22279,Private Lives (1931),Comedy|Drama|Romance,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+10155.jpg,10155,The Garage (1920),Short|Comedy,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+17437.jpg,17437,The Strong Man (1926),Comedy,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+19400.jpg,19400,The Smart Set (1928),Comedy,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24500.jpg,24500,Riders of Destiny (1933),Music|Romance|Western,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0
+24516.jpg,24516,Sagebrush Trail (1933),Western,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+24293.jpg,24293,The Man from Monterey (1933),Western,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+19379.jpg,19379,Show People (1928),Comedy|Romance,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24008.jpg,24008,Female (1933),Comedy|Drama|Romance,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+25455.jpg,25455,The Man from Utah (1934),Adventure|Crime|Romance,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+9937.jpg,9937,Blind Husbands (1919),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+21885.jpg,21885,A Free Soul (1931),Crime|Drama|Romance,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+6206.jpg,6206,Les vampires (1915),Action|Adventure|Crime,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+21673.jpg,21673,Blonde Crazy (1931),Comedy|Crime|Drama,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+25440.jpg,25440,The Lucky Texan (1934),Romance|Western,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+18379.jpg,18379,7th Heaven (1927),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24805.jpg,24805,'Neath the Arizona Skies (1934),Western,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+23456.jpg,23456,The Shadow of the Eagle (1932),Crime|Drama|Mystery,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+20298.jpg,20298,Queen Kelly (1929),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24663.jpg,24663,The Three Musketeers (1933),Action|Adventure|Mystery,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+14358.jpg,14358,The Pilgrim (1923),Comedy,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22150.jpg,22150,Le million (1931),Musical|Comedy,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+19946.jpg,19946,The Great Gabbo (1929),Drama|Musical|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+23243.jpg,23243,Mr. Robinson Crusoe (1932),Action|Adventure|Comedy,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+18839.jpg,18839,The Docks of New York (1928),Crime|Drama|Film-Noir,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+9062.jpg,9062,The Merry Jail (1917),Comedy,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24991.jpg,24991,Cleopatra (1934),Biography|Drama|History,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0
+19558.jpg,19558,The Wedding March (1928),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+9611.jpg,9611,Shoulder Arms (1918),Comedy|War,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+15167.jpg,15167,Neobychainye priklyucheniya mistera Vesta v strane bolshevikov (1924),Comedy,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+19286.jpg,19286,Storm Over Asia (1928),Drama|War,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+19649.jpg,19649,Arsenal (1929),Drama|War,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+13688.jpg,13688,The Toll of the Sea (1922),Drama|Family|Fantasy,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+9932.jpg,9932,"Billy Blazes, Esq. (1919)",Short|Comedy|Western,0,1,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+17961.jpg,17961,Happiness (1935),Comedy|Drama,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+18523.jpg,18523,The Horse Ate the Hat (1928),Comedy,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22017.jpg,22017,Kameradschaft (1931),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+19574.jpg,19574,White Shadows in the South Seas (1928),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+7361.jpg,7361,Snow White (1916),Fantasy|Romance,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+16481.jpg,16481,Variety (1925),Crime|Drama|Romance,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+17162.jpg,17162,Moana (1926),Documentary,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+25478.jpg,25478,Maskerade (1934),Comedy|Romance,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23305.jpg,23305,One Way Passage (1932),Comedy|Drama|Romance,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+19788.jpg,19788,Coquette (1929),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+3740.jpg,3740,Cabiria (1914),Adventure|Drama|History,1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+19993.jpg,19993,The Hollywood Revue of 1929 (1929),Musical,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+4707.jpg,4707,Tillie's Punctured Romance (1914),Comedy,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+14532.jpg,14532,The Ten Commandments (1923),Biography|Drama|Fantasy,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+25607.jpg,25607,Operator 13 (1934),Drama|History|Romance,1,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+11908.jpg,11908,The Adventures of Tarzan (1921),Action|Adventure,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+16201.jpg,16201,Parisian Love (1925),Crime|Drama|Romance,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22485.jpg,22485,TÌ«kyÌ« no kÌ«rasu (1931),Comedy|Drama,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+19237.jpg,19237,Our Dancing Daughters (1928),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+14417.jpg,14417,La roue (1923),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+21549.jpg,21549,Whoopee! (1930),Comedy|Musical,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+8663.jpg,8663,Terje Vigen (1917),Drama|War,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+10307.jpg,10307,J'accuse! (1919),Drama|Horror|War,1,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+19591.jpg,19591,A Woman of Affairs (1928),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+12486.jpg,12486,My Boy (1921),Comedy|Drama,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+21110.jpg,21110,Mammy (1930),Comedy|Musical,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+16544.jpg,16544,The Wizard of Oz (1925),Comedy|Family|Fantasy,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+19258.jpg,19258,The Patsy (1928),Comedy|Drama|Romance,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22834.jpg,22834,Downstairs (1932),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+21874.jpg,21874,Five and Ten (1931),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+25536.jpg,25536,Music in the Air (1934),Comedy|Musical|Romance,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+22454.jpg,22454,Svengali (1931),Drama|Horror|Romance,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+17750.jpg,17750,Chicago (1927),Comedy|Crime|Drama,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+18526.jpg,18526,Underworld (1927),Crime|Drama|Film-Noir,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+20112.jpg,20112,The Love Parade (1929),Comedy|Musical|Romance,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+23891.jpg,23891,Christopher Strong (1933),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+11960.jpg,11960,The Wildcat (1921),Comedy|Drama|Romance,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22403.jpg,22403,Smart Money (1931),Crime|Drama,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24115.jpg,24115,Heroes for Sale (1933),Drama|War,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+4635.jpg,4635,The Squaw Man (1914),Action|Drama|Romance,1,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+21294.jpg,21294,Remote Control (1930),Comedy|Drama,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+17534.jpg,17534,West Point (1927),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+16690.jpg,16690,Brown of Harvard (1926),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23825.jpg,23825,Bombshell (1933),Comedy|Drama|Romance,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+14900.jpg,14900,Finances of the Grand Duke (1924),Comedy,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+12651.jpg,12651,The Haunted Castle (1921),Crime|Drama|Horror,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23911.jpg,23911,Counsellor at Law (1933),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+19901.jpg,19901,Woman in the Moon (1929),Comedy|Drama|Romance,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+20876.jpg,20876,Feet First (1930),Comedy,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+3014.jpg,3014,Ingeborg Holm (1913),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+21106.jpg,21106,Madam Satan (1930),Musical|Romance|Comedy,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+21800.jpg,21800,Dishonored (1931),Drama|Romance|War,1,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+20821.jpg,20821,The Devil to Pay! (1930),Comedy|Romance,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23049.jpg,23049,If I Had a Million (1932),Comedy|Drama,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+18451.jpg,18451,The Student Prince in Old Heidelberg (1927),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+8879.jpg,8879,The Outlaw and His Wife (1918),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+9878.jpg,9878,Anders als die Andern (1919),Crime|Drama|History,1,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+11541.jpg,11541,One Week (1920),Short|Comedy,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+11071.jpg,11071,Convict 13 (1920),Short|Comedy,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+11656.jpg,11656,The Scarecrow (1920),Comedy|Short|Family,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+11508.jpg,11508,Neighbors (1920),Short|Comedy|Romance,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+12255.jpg,12255,The Haunted House (1921),Short|Comedy|Horror,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+11984.jpg,11984,The Boat (1921),Short|Comedy|Family,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+12570.jpg,12570,The Play House (1921),Short|Comedy|Fantasy,0,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+12543.jpg,12543,The Paleface (1922),Short|Comedy|Western,0,1,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+19823.jpg,19823,Disraeli (1929),Biography|Drama|History,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0
+13025.jpg,13025,Cops (1922),Short|Comedy|Family,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+12945.jpg,12945,The Blacksmith (1922),Comedy|Short,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+19429.jpg,19429,Street Angel (1928),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+13158.jpg,13158,The Frozen North (1922),Short|Comedy,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+13099.jpg,13099,The Electric House (1922),Short|Comedy,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+13055.jpg,13055,Daydreams (1922),Short|Comedy,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+13858.jpg,13858,The Balloonatic (1923),Short|Comedy,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+14218.jpg,14218,The Love Nest (1923),Short|Comedy,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+21910.jpg,21910,Girls About Town (1931),Comedy,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22397.jpg,22397,Skippy (1931),Family|Drama|Comedy,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+22495.jpg,22495,Trader Horn (1931),Adventure|Romance,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+11723.jpg,11723,"Die Spinnen, 2. Teil - Das Brillantenschiff (1920)",Adventure,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+10208.jpg,10208,Harakiri (1919),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4181.jpg,4181,Judith of Bethulia (1914),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+25397.jpg,25397,Liliom (1934),Drama|Fantasy,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+21074.jpg,21074,Liliom (1930),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+16104.jpg,16104,The Merry Widow (1925),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22854.jpg,22854,Emma (1932),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+17743.jpg,17743,Chang: A Drama of the Wilderness (1927),Adventure|Documentary,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+23488.jpg,23488,Smilin' Through (1932),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+20223.jpg,20223,Noah's Ark (1928),Drama|War,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+21770.jpg,21770,The Criminal Code (1931),Crime|Drama|Romance,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+20570.jpg,20570,White Hell of Pitz Palu (1929),Action|Adventure|Drama,1,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+21750.jpg,21750,City Streets (1931),Crime|Drama|Film-Noir,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+4465.jpg,4465,The Perils of Pauline (1914),Action,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+23261.jpg,23261,No Blood Relation (1932),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+3419.jpg,3419,The Student of Prague (1913),Drama|Fantasy|Horror,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23985.jpg,23985,The Emperor Jones (1933),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+25272.jpg,25272,The House of Rothschild (1934),Biography|Drama|History,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0
+22689.jpg,22689,Bird of Paradise (1932),Adventure|Romance|Drama,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+19304.jpg,19304,The Racket (1928),Crime|Drama|Film-Noir,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+23074.jpg,23074,Jewel Robbery (1932),Comedy|Crime|Romance,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22386.jpg,22386,The Sin of Madelon Claudet (1931),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24989.jpg,24989,The Clairvoyant (1935),Drama|Mystery|Romance,1,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24800.jpg,24800,Zoo in Budapest (1933),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24381.jpg,24381,Night Flight (1933),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24044.jpg,24044,Gabriel Over the White House (1933),Drama|Fantasy|Romance,1,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+18253.jpg,18253,The Patent Leather Kid (1927),Drama|Romance|Sport,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+18515.jpg,18515,Two Arabian Knights (1927),Comedy|Romance|Adventure,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+20122.jpg,20122,Lucky Star (1929),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24763.jpg,24763,When Ladies Meet (1933),Comedy|Romance,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24475.jpg,24475,The Prizefighter and the Lady (1933),Comedy|Crime|Romance,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+20695.jpg,20695,The Bishop Murder Case (1930),Drama|Mystery,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24793.jpg,24793,Yogoto no yume (1933),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+16013.jpg,16013,Lazybones (1925),Action|Comedy|Drama,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+20446.jpg,20446,The Squall (1929),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+25338.jpg,25338,Kagirinaki hodÌ« (1934),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22276.jpg,22276,Possessed (1931),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+19195.jpg,19195,The Mysterious Lady (1928),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+20018.jpg,20018,In Old Arizona (1928),Romance|Western,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+20836.jpg,20836,The Doorway to Hell (1930),Crime|Drama,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+13496.jpg,13496,Phantom (1922),Drama|Fantasy|Romance,1,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+20793.jpg,20793,Escape from Dartmoor (1929),Crime|Drama,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22905.jpg,22905,Forbidden (1932),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22676.jpg,22676,Big City Blues (1932),Comedy|Drama,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23125.jpg,23125,Lawyer Man (1932),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+14497.jpg,14497,Souls for Sale (1923),Comedy|Drama|Romance,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+17449.jpg,17449,The Temptress (1926),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+15842.jpg,15842,The Joyless Street (1925),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+25251.jpg,25251,Hide-Out (1934),Comedy|Crime|Drama,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+19735.jpg,19735,Bulldog Drummond (1929),Drama|Mystery|Thriller,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+21016.jpg,21016,Just Imagine (1930),Comedy|Fantasy|Musical,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+20075.jpg,20075,Laila (1929),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24617.jpg,24617,The Story of Temple Drake (1933),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2461.jpg,2461,Richard III (1912),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23326.jpg,23326,Payment Deferred (1932),Crime|Drama,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+25509.jpg,25509,Les misÌ©rables (1934),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22787.jpg,22787,Les croix de bois (1932),Drama|War,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+23277.jpg,23277,No Man of Her Own (1932),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23556.jpg,23556,Taxi! (1932),Crime|Drama|Romance,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24302.jpg,24302,Man's Castle (1933),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22792.jpg,22792,The Crowd Roars (1932),Action|Drama|Sport,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0
+22430.jpg,22430,The Star Witness (1931),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+21635.jpg,21635,Bad Girl (1931),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+10071.jpg,10071,Don't Change Your Husband (1919),Comedy,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+3489.jpg,3489,The Last Days of Pompeii (1913),Adventure|Drama,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+10821.jpg,10821,Eerie Tales (1919),Fantasy|Horror|Mystery,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23225.jpg,23225,Million Dollar Legs (1932),Comedy|Sport,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+22335.jpg,22335,Safe in Hell (1931),Crime|Drama,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+25263.jpg,25263,Hollywood Party (1934),Comedy|Musical,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+6886.jpg,6886,Judex (1916),Adventure|Crime,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23101.jpg,23101,Kongo (1932),Drama|Horror,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23486.jpg,23486,Skyscraper Souls (1932),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+17119.jpg,17119,Mantrap (1926),Comedy,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24539.jpg,24539,Secrets (1933),Drama|Western,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+5960.jpg,5960,Regeneration (1915),Biography|Crime|Drama,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+8891.jpg,8891,The Blue Bird (1918),Fantasy,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24610.jpg,24610,State Fair (1933),Comedy|Drama|Romance,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22775.jpg,22775,Frisco Jenny (1932),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+15039.jpg,15039,Kino Eye (1924),Documentary,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+23582.jpg,23582,Thirteen Women (1932),Drama|Mystery,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+6826.jpg,6826,Hoodoo Ann (1916),Comedy|Drama|Romance,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+21917.jpg,21917,God's Gift to Women (1931),Comedy|Romance,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24906.jpg,24906,Born to Be Bad (1934),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4066.jpg,4066,The Mysterious X (1914),Drama|Mystery,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+20114.jpg,20114,The Love Trap (1929),Comedy,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+16226.jpg,16226,The Plastic Age (1925),Comedy|Romance|Sport,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+7145.jpg,7145,One A.M. (1916),Comedy|Family|Short,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+7832.jpg,7832,The Cure (1917),Short|Comedy,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4936.jpg,4936,The Bank (1915),Comedy|Short,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+5810.jpg,5810,A Night Out (1915),Comedy|Short,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+10747.jpg,10747,Sunnyside (1919),Comedy|Short,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+7194.jpg,7194,Police (1916),Comedy|Short,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+7880.jpg,7880,Easy Street (1917),Short|Comedy,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23939.jpg,23939,Deserter (1933),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22021.jpg,22021,Kept Husbands (1931),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+21933.jpg,21933,Guilty Hands (1931),Drama|Crime,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+20581.jpg,20581,Where East Is East (1929),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+11979.jpg,11979,The Blot (1921),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24238.jpg,24238,Ladies They Talk About (1933),Crime|Drama|Romance,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+14872.jpg,14872,Entr'acte (1924),Short|Fantasy,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+19843.jpg,19843,Dynamite (1929),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+19886.jpg,19886,The Flying Fleet (1929),Adventure|Drama|Romance,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+25329.jpg,25329,Power (1934),Drama|History|Romance,1,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+19109.jpg,19109,Lonesome (1928),Comedy|Drama|Romance,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+8634.jpg,8634,Straight Shooting (1917),Western,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+23986.jpg,23986,Employees' Entrance (1933),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+20838.jpg,20838,Doughboys (1930),Comedy|War,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+18530.jpg,18530,Upstream (1927),Comedy|Drama,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24968.jpg,24968,Charlie Chan in London (1934),Crime|Drama|Mystery,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+15213.jpg,15213,Papirosnitsa ot Mosselproma (1924),Comedy|Romance,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24819.jpg,24819,The Age of Innocence (1934),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24851.jpg,24851,Babbitt (1934),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+16669.jpg,16669,La BohÌ¬me (1926),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+15684.jpg,15684,The Circle (1925),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23491.jpg,23491,So Big! (1932),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24854.jpg,24854,Baby Take a Bow (1934),Comedy|Drama|Family,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+15589.jpg,15589,The Awful Truth (1925),Comedy,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+9652.jpg,9652,Stella Maris (1918),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24651.jpg,24651,The Last Will of Dr. Mabuse (1933),Crime|Horror|Mystery,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23198.jpg,23198,The Match King (1932),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2844.jpg,2844,FantÌ«mas: In the Shadow of the Guillotine (1913),Crime|Drama,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+7558.jpg,7558,Where Are My Children? (1916),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+20620.jpg,20620,Abraham Lincoln (1930),Biography|Drama|History,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0
+20062.jpg,20062,The Kiss (1929),Romance|Drama,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+8523.jpg,8523,The Rough House (1917),Comedy|Short,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23349.jpg,23349,Polly of the Circus (1932),Comedy|Drama,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+21668.jpg,21668,The Black Camel (1931),Crime|Mystery|Thriller,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+23537.jpg,23537,A Successful Calamity (1932),Comedy|Drama,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+25031.jpg,25031,Dangerous Corner (1934),Mystery,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22357.jpg,22357,The Secret Six (1931),Crime|Drama,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23284.jpg,23284,La nuit du carrefour (1932),Crime|Drama|Mystery,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+7264.jpg,7264,The Rink (1916),Comedy|Short,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+5542.jpg,5542,In the Park (1915),Short|Comedy,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4101.jpg,4101,His New Profession (1914),Short|Comedy,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+6032.jpg,6032,Shanghaied (1915),Short|Comedy,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4134.jpg,4134,Hypocrites (1915),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+15801.jpg,15801,Feu Mathias Pascal (1926),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23685.jpg,23685,The Wet Parade (1932),Drama|History|Romance,1,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+5074.jpg,5074,The Champion (1915),Short|Comedy|Sport,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+5571.jpg,5571,A Jitney Elopement (1915),Short|Comedy,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24961.jpg,24961,The Cat's-Paw (1934),Comedy,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4277.jpg,4277,Mabel at the Wheel (1914),Short|Comedy,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+14702.jpg,14702,Beau Brummel (1924),Drama|History|Romance,1,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+15493.jpg,15493,White Shadows (1924),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+15036.jpg,15036,Kean (1924),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+8950.jpg,8950,Carmen (1918),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+25132.jpg,25132,Forsaking All Others (1934),Comedy|Drama|Romance,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23327.jpg,23327,The Penquin Pool Murder (1932),Comedy|Drama|Mystery,1,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22635.jpg,22635,Are You Listening? (1932),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+14672.jpg,14672,America (1924),Drama|History|War,1,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0
+21632.jpg,21632,Bachelor Apartment (1931),Comedy|Drama|Romance,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+20439.jpg,20439,Speedway (1929),Drama|Romance|Sport,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+21576.jpg,21576,ÌÛ propos de Nice (1930),Documentary|Short|Comedy,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+22873.jpg,22873,Faithless (1932),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22119.jpg,22119,Man of the World (1931),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+21282.jpg,21282,Rain or Shine (1930),Comedy|Drama|Romance,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+15152.jpg,15152,Mustalaishurmaaja (1929),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24514.jpg,24514,S.O.S. Eisberg (1933),Adventure|Drama,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+16672.jpg,16672,The Boob (1926),Comedy|Romance,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+10281.jpg,10281,Ich mÌ¦chte kein Mann sein (1918),Comedy|Romance,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+21649.jpg,21649,Behind Office Doors (1931),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22700.jpg,22700,Blondie of the Follies (1932),Comedy,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+13201.jpg,13201,Grandma's Boy (1922),Comedy|Family,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+20247.jpg,20247,Our Modern Maidens (1929),Drama|Comedy,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23817.jpg,23817,Blondie Johnson (1933),Crime|Drama,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+18618.jpg,18618,Across to Singapore (1928),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+13741.jpg,13741,The Loves of Pharaoh (1922),Drama|History,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+21223.jpg,21223,Our Blushing Brides (1930),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22639.jpg,22639,ArsÌ¬ne Lupin (1932),Crime|Mystery|Romance,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24625.jpg,24625,A Study in Scarlet (1933),Mystery|Thriller,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+24831.jpg,24831,Anne of Green Gables (1934),Comedy|Drama|Family,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+21472.jpg,21472,Three Faces East (1930),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+21228.jpg,21228,Paid (1930),Drama|Film-Noir,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+12645.jpg,12645,Mad Love (1921),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+3772.jpg,3772,Cinderella (1914),Fantasy|Drama,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+12281.jpg,12281,Hintertreppe (1921),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23495.jpg,23495,The Son-Daughter (1932),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+15498.jpg,15498,Wild Oranges (1924),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24895.jpg,24895,Black Moon (1934),Horror,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+7819.jpg,7819,Coney Island (1917),Short|Comedy,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+21542.jpg,21542,Westfront 1918 (1930),Drama|Romance|War,1,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+25346.jpg,25346,The Key (1934),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+10057.jpg,10057,A Day's Pleasure (1919),Short|Comedy,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+5339.jpg,5339,A Fool There Was (1915),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24762.jpg,24762,What - No Beer? (1933),Comedy,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+21780.jpg,21780,Just a Gigolo (1931),Comedy|Romance,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+19684.jpg,19684,Behind That Curtain (1929),Mystery,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+19067.jpg,19067,A Lady of Chance (1928),Comedy|Drama|Romance,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23758.jpg,23758,Ann Carver's Profession (1933),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+21647.jpg,21647,Beauty and the Boss (1932),Comedy|Romance,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+18937.jpg,18937,A Girl in Every Port (1928),Action|Adventure|Comedy,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+13992.jpg,13992,Dnevnik Glumova (1923),Short,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+16691.jpg,16691,Brudeferden i Hardanger (1926),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+21733.jpg,21733,Charlie Chan Carries On (1931),Mystery,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22755.jpg,22755,Charlie Chan's Chance (1932),Mystery,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+16629.jpg,16629,The Bat (1926),Mystery|Thriller,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+23881.jpg,23881,Charlie Chan's Greatest Case (1933),Mystery,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+20336.jpg,20336,Chasing Rainbows (1930),Comedy|Drama|Musical,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+5812.jpg,5812,A Night in the Show (1915),Comedy|Short,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23469.jpg,23469,The Sign of Four: Sherlock Holmes' Greatest Case (1932),Crime|Drama|Mystery,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22619.jpg,22619,Alias the Doctor (1932),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+14760.jpg,14760,Captain January (1924),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+16258.jpg,16258,The Rag Man (1925),Drama|Comedy,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+21273.jpg,21273,Prix de beautÌ© (Miss Europe) (1930),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22236.jpg,22236,Other Men's Women (1931),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22660.jpg,22660,The Beast of the City (1932),Crime|Drama|Film-Noir,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+22735.jpg,22735,The Cabin in the Cotton (1932),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22251.jpg,22251,Pardon Us (1931),Comedy|Crime|Drama,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+6668.jpg,6668,Fatty and Mabel Adrift (1916),Comedy|Short,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+16804.jpg,16804,Don Juan (1926),Adventure|Romance,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22802.jpg,22802,The Dark Horse (1932),Comedy,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23584.jpg,23584,This Is the Night (1932),Comedy,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+21799.jpg,21799,Dirigible (1931),Adventure,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+10247.jpg,10247,Herr Arnes pengar (1919),Drama|History,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+25202.jpg,25202,Great Expectations (1934),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+25227.jpg,25227,The Hearts of Age (1934),Short,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+21551.jpg,21551,The Widow from Chicago (1930),Crime|Drama|Romance,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+21969.jpg,21969,Honor Among Lovers (1931),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23993.jpg,23993,Ex-Lady (1933),Comedy|Drama,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24620.jpg,24620,The Stranger's Return (1933),Comedy|Drama,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+19557.jpg,19557,Weary River (1929),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+25465.jpg,25465,Maniac (1934),Horror,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+16480.jpg,16480,The Vanishing American (1925),Western,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+14605.jpg,14605,The White Sister (1923),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24647.jpg,24647,The Telegraph Trail (1933),Western,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+17196.jpg,17196,Nana (1926),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+15002.jpg,15002,Hot Water (1924),Comedy,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22054.jpg,22054,The Last Flight (1931),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23312.jpg,23312,Pack Up Your Troubles (1932),Comedy|War,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+24307.jpg,24307,"Mary Stevens, M.D. (1933)",Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+20585.jpg,20585,Why Be Good? (1929),Comedy|Drama|Romance,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+18836.jpg,18836,The Divine Woman (1928),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+18166.jpg,18166,Mockery (1927),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+25173.jpg,25173,The Girl from Missouri (1934),Comedy|Drama|Romance,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+19571.jpg,19571,While the City Sleeps (1928),Crime|Drama,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24130.jpg,24130,Hold Your Man (1933),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23240.jpg,23240,The Mouthpiece (1932),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23322.jpg,23322,The Passionate Plumber (1932),Comedy,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+21060.jpg,21060,Let Us Be Gay (1930),Comedy|Drama,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+18102.jpg,18102,Long Pants (1927),Comedy,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23838.jpg,23838,The Bowery (1933),Comedy|Drama,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+19850.jpg,19850,Erotikon (1929),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23498.jpg,23498,Speak Easily (1932),Comedy,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23589.jpg,23589,Three Wise Girls (1932),Comedy|Drama|Romance,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23180.jpg,23180,Man Wanted (1932),Romance|Comedy|Drama,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24414.jpg,24414,One Sunday Afternoon (1933),Comedy|Romance,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+10267.jpg,10267,The Hoodlum (1919),Comedy,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+20479.jpg,20479,The Taming of the Shrew (1929),Comedy|Romance,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22990.jpg,22990,Hell's Highway (1932),Crime|Drama,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+25228.jpg,25228,Heat Lightning (1934),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+20198.jpg,20198,The Mysterious Island (1929),Adventure|Romance|Sci-Fi,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+23151.jpg,23151,The Lost Squadron (1932),Drama|History|War,1,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0
+24465.jpg,24465,The Power and the Glory (1933),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23642.jpg,23642,Union Depot (1932),Comedy|Drama|Romance,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23396.jpg,23396,"Ride Him, Cowboy (1932)",Romance|Western,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+23659.jpg,23659,Virtue (1932),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24569.jpg,24569,Sittin' on a Backyard Fence (1933),Animation|Family|Short,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0
+24684.jpg,24684,Topaze (1933),Drama|Comedy,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23202.jpg,23202,Me and My Gal (1932),Comedy|Drama|Romance,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23629.jpg,23629,Two Seconds (1932),Drama|Thriller,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+23028.jpg,23028,Hot Saturday (1932),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+16394.jpg,16394,Stage Struck (1925),Comedy,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24675.jpg,24675,Today We Live (1933),Drama|Romance|War,1,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+21406.jpg,21406,Sono yo no tsuma (1930),Crime|Drama,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24685.jpg,24685,Torch Singer (1933),Drama|Musical|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+23902.jpg,23902,El compadre Mendoza (1934),Drama|War,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+25198.jpg,25198,Le grand jeu (1934),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23800.jpg,23800,Betty Boop's Hallowe'en Party (1933),Animation|Short|Family,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0
+7108.jpg,7108,The Mystery of the Leaping Fish (1916),Comedy|Short,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+19968.jpg,19968,The Haunted House (1929),Animation|Short|Comedy,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+21720.jpg,21720,The Cat's Out (1931),Animation|Short|Comedy,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+19715.jpg,19715,Bouncing Babies (1929),Comedy|Family|Short,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+2544.jpg,2544,TrÌ_dgÌ´rdsmÌ_staren (1912),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+11362.jpg,11362,Karin Ingmarsdotter (1920),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+11370.jpg,11370,Klostret i Sendomir (1920),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4008.jpg,4008,Gertie the Dinosaur (1914),Animation|Short|Comedy,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+3037.jpg,3037,FantÌ«mas: Juve versus FantÌ«mas (1913),Crime|Drama,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+3165.jpg,3165,FantÌ«mas: The Dead Man Who Killed (1913),Crime|Drama|Mystery,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+3930.jpg,3930,FantÌ«mas: FantÌ«mas versus FantÌ«mas (1914),Crime|Drama,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+3952.jpg,3952,FantÌ«mas: The False Magistrate (1914),Crime|Drama,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+11833.jpg,11833,From Morn to Midnight (1920),Drama|Thriller,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+6753.jpg,6753,The Half-Breed (1916),Western,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+25477.jpg,25477,The Mascot (1933),Animation|Short|Adventure,0,0,0,0,1,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+13802.jpg,13802,The Young Rajah (1922),Romance|Drama,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22103.jpg,22103,The Mad Genius (1931),Drama|Horror|Romance,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+11521.jpg,11521,"Number, Please? (1920)",Short|Comedy|Romance,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+14446.jpg,14446,Der Schatz (1923),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+17813.jpg,17813,Do Detectives Think? (1927),Short|Comedy,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+19607.jpg,19607,You're Darn Tootin' (1928),Short|Comedy|Music,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+25393.jpg,25393,The Life of Vergie Winters (1934),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+17809.jpg,17809,Devushka s korobkoy (1927),Comedy|Drama|Romance,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+11193.jpg,11193,The Flapper (1920),Comedy,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+19451.jpg,19451,Tempest (1928),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+13823.jpg,13823,Alice's Wonderland (1923),Animation|Comedy|Short,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+3471.jpg,3471,Traffic in Souls (1913),Crime|Drama,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+18397.jpg,18397,The Show (1927),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+20980.jpg,20980,Hogaraka ni ayume (1930),Crime|Drama|Romance,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+12253.jpg,12253,Hard Luck (1921),Short|Comedy,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+13597.jpg,13597,Sherlock Holmes (1922),Drama|Mystery,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+5198.jpg,5198,The Dinosaur and the Missing Link: A Prehistoric Tragedy (1915),Comedy|Short|Animation,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+15224.jpg,15224,Peter Pan (1924),Adventure|Fantasy|Family,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+24373.jpg,24373,The Narrow Corner (1933),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23990.jpg,23990,Eskimo (1933),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+15634.jpg,15634,Body and Soul (1925),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+25094.jpg,25094,Evergreen (1934),Comedy|Musical|Romance,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+20425.jpg,20425,So This Is College (1929),Comedy|Drama|Musical,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+5557.jpg,5557,The Italian (1915),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4873.jpg,4873,Alice in Wonderland (1915),Adventure|Family|Fantasy,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+5060.jpg,5060,Carmen (1915),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23871.jpg,23871,A CanÌ¤Ì£o de Lisboa (1933),Comedy|Musical,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+20499.jpg,20499,Thunderbolt (1929),Crime|Drama|Film-Noir,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+12408.jpg,12408,The Love Light (1921),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23335.jpg,23335,The Phantom of Crestwood (1932),Crime|Mystery,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+16276.jpg,16276,The Red Kimona (1925),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+25555.jpg,25555,Nana (1934),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24359.jpg,24359,Murder in the Private Car (1934),Mystery|Romance,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24559.jpg,24559,The Silk Express (1933),Drama|Mystery|Thriller,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+14406.jpg,14406,Return to Reason (1923),Short,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23337.jpg,23337,The Pie-Covered Wagon (1932),Comedy|Western|Short,0,1,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+4413.jpg,4413,The Ocean Waif (1916),Short|Comedy|Drama,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+17621.jpg,17621,A Daughter of Destiny (1928),Drama|Fantasy|Horror,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23982.jpg,23982,"Elmer, the Great (1933)",Comedy|Romance|Sport,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+10195.jpg,10195,The Grim Game (1919),Adventure|Drama,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+8827.jpg,8827,Amarilly of Clothes-Line Alley (1918),Comedy|Romance,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+6689.jpg,6689,The Floorwalker (1916),Short|Comedy,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+7507.jpg,7507,The Vagabond (1916),Short|Comedy|Romance,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+7162.jpg,7162,The Pawnshop (1916),Comedy|Short,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24886.jpg,24886,The Big Bad Wolf (1934),Animation|Comedy|Family,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0
+25211.jpg,25211,Gulliver Mickey (1934),Comedy|Family|Animation,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0
+24792.jpg,24792,Ye Olden Days (1933),Animation|Short|Comedy,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+22647.jpg,22647,Babes in the Woods (1932),Family|Animation|Short,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0
+22147.jpg,22147,Mickey's Orphans (1931),Family|Comedy|Animation,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0
+25126.jpg,25126,The Flying Mouse (1934),Animation|Short|Comedy,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+24285.jpg,24285,The Mad Doctor (1933),Animation|Short|Comedy,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+23854.jpg,23854,Building a Building (1933),Animation|Short|Comedy,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+19489.jpg,19489,The Trail of '98 (1928),Action|Adventure|Drama,1,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+4288.jpg,4288,Making a Living (1914),Short|Comedy,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+5084.jpg,5084,Children of Eve (1915),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+17418.jpg,17418,Sorok pervyy (1927),Drama|War,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+3016.jpg,3016,The Inside of the White Slave Traffic (1913),Short|Drama,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+21768.jpg,21768,Cracked Nuts (1931),Comedy|Romance,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+20945.jpg,20945,Half Shot at Sunrise (1930),Comedy|Musical,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+4150.jpg,4150,In the Land of the Head Hunters (1914),Drama|History,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+22778.jpg,22778,The Conquerors (1932),Drama|Western,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+19509.jpg,19509,Underground (1928),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+6895.jpg,6895,King Lear (1916),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+16310.jpg,16310,The Salvation Hunters (1925),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+13571.jpg,13571,SalomÌ© (1922),Biography|Drama|History,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0
+6809.jpg,6809,His Picture in the Papers (1916),Comedy,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+21836.jpg,21836,Emil und die Detektive (1931),Adventure|Family|Drama,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+4194.jpg,4194,The Knockout (1914),Short|Comedy,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+6177.jpg,6177,The Tramp (1915),Short|Comedy,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+7338.jpg,7338,Sherlock Holmes (1916),Mystery,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+5622.jpg,5622,Liliya Belgii (1915),Animation|Drama|Short,1,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+21633.jpg,21633,The Bachelor Father (1931),Comedy|Drama|Romance,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23878.jpg,23878,Central Airport (1933),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+21807.jpg,21807,Don't Bet on Women (1931),Comedy|Romance,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+25303.jpg,25303,In Old Santa Fe (1934),Action|Comedy|Crime,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+23137.jpg,23137,Das Lied einer Nacht (1932),Comedy|Musical,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+21607.jpg,21607,An American Tragedy (1931),Romance|Drama,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+11865.jpg,11865,Why Change Your Wife? (1920),Comedy|Drama,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+12465.jpg,12465,Miss Lulu Bett (1921),Comedy|Drama,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+9369.jpg,9369,Mickey (1918),Comedy|Drama,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+20814.jpg,20814,David Golder (1931),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+16232.jpg,16232,Poil de carotte (1925),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24710.jpg,24710,La tÌ»te d'un homme (1933),Crime|Mystery|Thriller,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+20656.jpg,20656,Au bonheur des dames (1930),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23345.jpg,23345,The Red Head (1932),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+18187.jpg,18187,Le mystÌ¬re de la tour Eiffel (1927),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+15384.jpg,15384,Symphonie diaganale (1924),Animation|Short|Music,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+20217.jpg,20217,New York Nights (1929),Crime|Drama,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+19403.jpg,19403,Salt for Svanetia (1930),Documentary,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+20523.jpg,20523,Turksib (1929),Documentary,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+23331.jpg,23331,Pesn o geroyakh (1932),Documentary,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+21309.jpg,21309,The Story of the Fox (1930),Animation|Comedy|Family,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0
+19686.jpg,19686,Berth Marks (1929),Short|Comedy,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+21283.jpg,21283,Rakudai wa shitakeredo (1930),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+9899.jpg,9899,Back Stage (1919),Short|Comedy,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+16129.jpg,16129,The Movies (1925),Comedy|Short,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+20701.jpg,20701,Borderline (1930),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23362.jpg,23362,The Purchase Price (1932),Drama|Comedy,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23394.jpg,23394,The Rich Are Always with Us (1932),Comedy|Drama|Romance,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+21550.jpg,21550,Wide Open (1930),Comedy,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+14029.jpg,14029,The Extra Girl (1923),Comedy,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+12136.jpg,12136,Enchantment (1921),Comedy,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+7476.jpg,7476,Triple Trouble (1918),Comedy|Short,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+25345.jpg,25345,Kentucky Kernels (1934),Comedy,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+25214.jpg,25214,Haha wo kowazuya (1934),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+3662.jpg,3662,The Battle of Elderbush Gulch (1913),Short|Action|Western,0,0,0,0,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+24553.jpg,24553,Should Ladies Behave (1933),Comedy|Drama,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24411.jpg,24411,One Man's Journey (1933),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24633.jpg,24633,Sweepings (1933),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22807.jpg,22807,The Dentist (1932),Comedy|Short,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22235.jpg,22235,L'opÌ©ra de quat'sous (1931),Comedy|Crime|Musical,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+9440.jpg,9440,Old Wives for New (1918),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+9796.jpg,9796,The Whispering Chorus (1918),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+12881.jpg,12881,The Adventures of Robinson Crusoe (1922),Adventure,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+21345.jpg,21345,The Sea Bat (1930),Action|Romance|Thriller,0,0,1,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0
+24674.jpg,24674,To the Last Man (1933),Romance|Western,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+18392.jpg,18392,Shooting Stars (1928),Drama|Western,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+18826.jpg,18826,Les deux timides (1928),Comedy,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+12027.jpg,12027,Camille (1921),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+21042.jpg,21042,The Lady of Scandal (1930),Romance|Comedy|Drama,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+18566.jpg,18566,When a Man Loves (1927),History|Romance,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+24120.jpg,24120,HijÌ«sen no onna (1933),Crime|Drama|Romance,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24429.jpg,24429,Parole Girl (1933),Crime|Drama,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+20103.jpg,20103,The Locked Door (1929),Drama|Mystery|Thriller,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+19813.jpg,19813,The Desert Song (1929),Musical,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+20891.jpg,20891,The Florodora Girl (1930),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+19096.jpg,19096,Lights of New York (1928),Crime|Drama,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24768.jpg,24768,The Whispering Shadow (1933),Action|Crime|Mystery,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+19646.jpg,19646,L'argent (1928),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23847.jpg,23847,Broadway Thru a Keyhole (1933),Musical,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+22682.jpg,22682,The Big Timer (1932),Drama|Sport,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+13472.jpg,13472,Our Gang (1922),Short|Comedy|Family,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+20799.jpg,20799,The Cuckoos (1930),Comedy|Musical,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+25239.jpg,25239,Here Is My Heart (1934),Musical|Comedy,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+13674.jpg,13674,The Three Must-Get-Theres (1922),Action|Adventure|Comedy,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+13501.jpg,13501,Polikushka (1922),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+18873.jpg,18873,The Fall of the House of Usher (1928),Short|Horror,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23797.jpg,23797,Betty Boop's Big Boss (1933),Animation|Short|Comedy,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+19640.jpg,19640,Angora Love (1929),Comedy|Short,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24676.jpg,24676,TÌ«kyÌ« no onna (1933),Drama,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+14440.jpg,14440,Scaramouche (1923),Drama|Romance,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0

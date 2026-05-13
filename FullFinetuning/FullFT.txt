@@ -1,0 +1,70 @@
+Epoch 1/15: 100%|██████████| 102/102 [00:39<00:00,  2.55it/s, Loss=0.11, Scale=99.7] 
+epoch 1 finished. AVG_LOSS = 0.9221
+best model updated. Loss: 0.9221
+epoch model saved to: ./trained_clip_full_finetune/model_epoch_1.pt
+best model saved to: ./trained_clip_full_finetune/model_best.pt
+Epoch 2/15: 100%|██████████| 102/102 [00:38<00:00,  2.65it/s, Loss=0.258, Scale=99.6]
+epoch 2 finished. AVG_LOSS = 0.1912
+best model updated. Loss: 0.1912
+epoch model saved to: ./trained_clip_full_finetune/model_epoch_2.pt
+best model saved to: ./trained_clip_full_finetune/model_best.pt
+Epoch 3/15: 100%|██████████| 102/102 [00:38<00:00,  2.65it/s, Loss=0.232, Scale=99.4]
+epoch 3 finished. AVG_LOSS = 0.1910
+best model updated. Loss: 0.1910
+epoch model saved to: ./trained_clip_full_finetune/model_epoch_3.pt
+best model saved to: ./trained_clip_full_finetune/model_best.pt
+Epoch 4/15: 100%|██████████| 102/102 [00:38<00:00,  2.65it/s, Loss=0.17, Scale=99.4] 
+epoch 4 finished. AVG_LOSS = 0.1820
+best model updated. Loss: 0.1820
+epoch model saved to: ./trained_clip_full_finetune/model_epoch_4.pt
+best model saved to: ./trained_clip_full_finetune/model_best.pt
+Epoch 5/15: 100%|██████████| 102/102 [00:38<00:00,  2.65it/s, Loss=0.175, Scale=99.3]
+epoch 5 finished. AVG_LOSS = 0.1831
+epoch model saved to: ./trained_clip_full_finetune/model_epoch_5.pt
+best model saved to: ./trained_clip_full_finetune/model_best.pt
+Epoch 6/15: 100%|██████████| 102/102 [00:38<00:00,  2.65it/s, Loss=0.257, Scale=99.2]
+epoch 6 finished. AVG_LOSS = 0.1780
+best model updated. Loss: 0.1780
+epoch model saved to: ./trained_clip_full_finetune/model_epoch_6.pt
+best model saved to: ./trained_clip_full_finetune/model_best.pt
+Epoch 7/15: 100%|██████████| 102/102 [00:38<00:00,  2.66it/s, Loss=0.133, Scale=99.2]
+epoch 7 finished. AVG_LOSS = 0.1800
+epoch model saved to: ./trained_clip_full_finetune/model_epoch_7.pt
+best model saved to: ./trained_clip_full_finetune/model_best.pt
+Epoch 8/15: 100%|██████████| 102/102 [00:38<00:00,  2.65it/s, Loss=0.209, Scale=99.2]
+epoch 8 finished. AVG_LOSS = 0.1796
+epoch model saved to: ./trained_clip_full_finetune/model_epoch_8.pt
+best model saved to: ./trained_clip_full_finetune/model_best.pt
+Epoch 9/15: 100%|██████████| 102/102 [00:38<00:00,  2.65it/s, Loss=0.167, Scale=99.1]
+epoch 9 finished. AVG_LOSS = 0.1782
+epoch model saved to: ./trained_clip_full_finetune/model_epoch_9.pt
+best model saved to: ./trained_clip_full_finetune/model_best.pt
+Epoch 10/15: 100%|██████████| 102/102 [00:38<00:00,  2.65it/s, Loss=0.145, Scale=99.1]
+epoch 10 finished. AVG_LOSS = 0.1768
+best model updated. Loss: 0.1768
+epoch model saved to: ./trained_clip_full_finetune/model_epoch_10.pt
+best model saved to: ./trained_clip_full_finetune/model_best.pt
+Epoch 11/15: 100%|██████████| 102/102 [00:38<00:00,  2.66it/s, Loss=0.066, Scale=99.1]
+epoch 11 finished. AVG_LOSS = 0.1770
+epoch model saved to: ./trained_clip_full_finetune/model_epoch_11.pt
+best model saved to: ./trained_clip_full_finetune/model_best.pt
+Epoch 12/15: 100%|██████████| 102/102 [00:38<00:00,  2.66it/s, Loss=0.182, Scale=99.1] 
+epoch 12 finished. AVG_LOSS = 0.1760
+best model updated. Loss: 0.1760
+epoch model saved to: ./trained_clip_full_finetune/model_epoch_12.pt
+best model saved to: ./trained_clip_full_finetune/model_best.pt
+Epoch 13/15: 100%|██████████| 102/102 [00:38<00:00,  2.65it/s, Loss=0.227, Scale=99.1]
+epoch 13 finished. AVG_LOSS = 0.1731
+best model updated. Loss: 0.1731
+epoch model saved to: ./trained_clip_full_finetune/model_epoch_13.pt
+best model saved to: ./trained_clip_full_finetune/model_best.pt
+Epoch 14/15: 100%|██████████| 102/102 [00:38<00:00,  2.65it/s, Loss=0.118, Scale=99.1]
+epoch 14 finished. AVG_LOSS = 0.1673
+best model updated. Loss: 0.1673
+epoch model saved to: ./trained_clip_full_finetune/model_epoch_14.pt
+best model saved to: ./trained_clip_full_finetune/model_best.pt
+Epoch 15/15: 100%|██████████| 102/102 [00:38<00:00,  2.65it/s, Loss=0.16, Scale=99.1] 
+epoch 15 finished. AVG_LOSS = 0.1628
+best model updated. Loss: 0.1628
+epoch model saved to: ./trained_clip_full_finetune/model_epoch_15.pt
+best model saved to: ./trained_clip_full_finetune/model_best.pt
