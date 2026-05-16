@@ -93,18 +93,20 @@ def train():
         y_pred = torch.cat(all_preds).numpy()
         y_true = torch.cat(all_labels).numpy()
 
-        val_f1 = f1_score(y_true, y_pred, average="micro")
+        val_micro_f1 = f1_score(y_true, y_pred, average="micro", zero_division=0)
+        val_macro_f1 = f1_score(y_true, y_pred, average="macro", zero_division=0)
 
         print(
             f"Epoch {epoch + 1}/{epochs} | "
             f"Train: {train_loss:.4f} | "
             f"Val Loss: {val_loss:.4f} | "
-            f"Val F1 {val_f1:.4f}"
+            f"Val Micro F1 {val_micro_f1:.4f} | "
+            f"Val Macro F1: {val_macro_f1:.4f}"
         )
 
         # save best model
-        if val_f1 > best_val_f1:
-            best_val_f1 = val_f1
+        if val_micro_f1 > best_val_f1:
+            best_val_f1 = val_micro_f1
             best_val_loss = val_loss
             torch.save(model.state_dict(), "best_poster_cnn.pth")
             print("Saved best model")
