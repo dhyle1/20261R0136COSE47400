@@ -28,10 +28,15 @@ def evaluate():
 
     # model
     model = PosterCNN().to(device)
-    model.load_state_dict(torch.load("best_poster_cnn.pth", map_location=device))
+
+    checkpoint = torch.load("best_poster_cnn.pth", map_location=device)
+    model.load_state_dict(checkpoint["model_state_dict"])
+    threshold = checkpoint["threshold"]
+
     model.eval()
 
     print(f"Using device: {device}")
+    print(f"Using threshold: {threshold:.2f}")
 
     all_preds = []
     all_labels = []
@@ -46,7 +51,7 @@ def evaluate():
             outputs = model(images)
 
             probs = torch.sigmoid(outputs)
-            preds = (probs > 0.5).float()
+            preds = (probs > threshold).float()
 
             all_preds.append(preds.cpu())
             all_labels.append(labels.cpu())
