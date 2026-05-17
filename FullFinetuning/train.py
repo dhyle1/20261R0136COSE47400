@@ -4,6 +4,8 @@ import os
 import pandas as pd
 import json
 from PIL import Image
+from sklearn.metrics import f1_score
+from torch.utils.data import random_split, DataLoader
 from tqdm import tqdm
 import torch.nn.functional as F 
 
@@ -90,6 +92,11 @@ class MoviePosterDataset(torch.utils.data.Dataset):
         self.preprocess = preprocess
         self.img_folder = img_folder
 
+        # filters out rows with missing image files
+        self.df = self.df[
+            self.df["img_filename"].apply(self._image_exists)
+        ].reset_index(drop=True)
+
     def __len__(self):
         return len(self.df)
     
@@ -106,11 +113,25 @@ class MoviePosterDataset(torch.utils.data.Dataset):
         )
 
         return img_tensor, label_tensor
+    
+    def _image_exists(self, filename):
+        path = os.path.join(self.img_folder, filename)
+        return os.path.exists(path)
 
 
-train_dataset = MoviePosterDataset(train_df, preprocess, IMG_FOLDER)
+# split train / validation
+full_train_dataset = MoviePosterDataset(train_df, preprocess, IMG_FOLDER)
 
-train_loader = torch.utils.data.DataLoader(
+train_size = int(0.8 * len(full_train_dataset))
+val_size = len(full_train_dataset) - train_size
+
+train_dataset, val_dataset = random_split(
+    full_train_dataset,
+    [train_size, val_size],
+    generator=torch.Generator().manual_seed(SEED)
+)
+
+train_loader = DataLoader(
     train_dataset,
     batch_size=BATCH_SIZE,
     shuffle=True,
@@ -118,7 +139,13 @@ train_loader = torch.utils.data.DataLoader(
     pin_memory=True
 )
 
-
+val_loader = DataLoader(
+    val_dataset,
+    batch_size=BATCH_SIZE,
+    shuffle=False,
+    num_workers=4,
+    pin_memory=True
+)
 
 
 optimizer = torch.optim.AdamW(
@@ -145,13 +172,12 @@ loss_fn = torch.nn.BCEWithLogitsLoss(pos_weight=class_weight)
 print(f"start training...")
 
 
-
+best_val_micro_f1 = 0.0
 best_loss = float("inf")
 best_model_path = None
 
-model.train()
-
 for epoch in range(EPOCHS):
+    model.train()
     total_loss = 0.0
 
     pbar = tqdm(train_loader, desc=f"Epoch {epoch + 1}/{EPOCHS}")
@@ -191,23 +217,73 @@ for epoch in range(EPOCHS):
 
     avg_loss = total_loss / len(train_loader)
 
-    print(f'epoch {epoch + 1} finished. AVG_LOSS = {avg_loss:.4f}')
+    # validation
+    model.eval()
 
+    all_preds = []
+    all_labels = []
+
+    with torch.no_grad():
+        for images, labels in val_loader:
+            images = images.to(device)
+            labels = labels.to(device)
+
+            image_features = model.encode_image(images)
+            text_features = model.encode_text(text_tokens)
+
+            image_features = image_features / image_features.norm(dim=-1, keepdim=True)
+            text_features = text_features / text_features.norm(dim=-1, keepdim=True)
+
+            logit_scale = model.logit_scale.exp()
+            logits = logit_scale * image_features @ text_features.T
+
+            probs = torch.sigmoid(logits)
+            preds = (probs > 0.5).float()
+
+            all_preds.append(preds.cpu())
+            all_labels.append(labels.cpu())
+
+    y_pred = torch.cat(all_preds).numpy()
+    y_true = torch.cat(all_labels).numpy()
+
+    val_micro_f1 = f1_score(
+        y_true,
+        y_pred,
+        average="micro",
+        zero_division=0
+    )
+
+    val_macro_f1 = f1_score(
+        y_true,
+        y_pred,
+        average="macro",
+        zero_division=0
+    )
+
+    print(
+        f"Epoch {epoch + 1}/{EPOCHS} | "
+        f"Avg Loss: {avg_loss:.4f} | "
+        f"Val Micro F1: {val_micro_f1:.4f} | "
+        f"Val Macro F1: {val_macro_f1:.4f}"
+    )
+
+    # save
     epoch_save_path = os.path.join(
         SAVE_MODLE_PATH,
-        f'model_epoch_{epoch + 1}.pt'
+        f"model_epoch_{epoch + 1}.pt"
     )
 
     torch.save(model.state_dict(), epoch_save_path)
 
-    if avg_loss < best_loss:
-        best_loss = avg_loss
-        best_model_path = os.path.join(SAVE_MODLE_PATH, "model_best.pt")
+    if val_micro_f1 > best_val_micro_f1:
+        best_val_micro_f1 = val_micro_f1
+        best_model_path = os.path.join(SAVE_MODLE_PATH,"model_best.pt")
+
         torch.save(model.state_dict(), best_model_path)
 
-        print(f"best model updated. Loss: {best_loss:.4f}")
+        print(
+            f"best model updated. "
+            f"Val Micro F1: {best_val_micro_f1:.4f}"
+        )
 
     print(f"epoch model saved to: {epoch_save_path}")
-
-    if best_model_path is not None:
-        print(f"best model saved to: {best_model_path}")
