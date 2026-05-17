@@ -46,6 +46,7 @@ def train():
     epochs = 10
     best_val_f1 = 0.0
     best_val_loss = float("inf")
+    best_saved_threshold = 0.5
 
     # training loop
     for epoch in range(epochs):
@@ -69,7 +70,7 @@ def train():
         model.eval()
         val_loss = 0
 
-        all_preds = []
+        all_probs = []
         all_labels = []
 
         with torch.no_grad():
@@ -82,25 +83,39 @@ def train():
                 val_loss += loss.item()
 
                 probs = torch.sigmoid(outputs)
-                preds = (probs > 0.5).float()
 
-                all_preds.append(preds.cpu())
+                all_probs.append(probs.cpu())
                 all_labels.append(labels.cpu())
 
         train_loss /= len(train_loader)
         val_loss /= len(val_loader)
 
-        y_pred = torch.cat(all_preds).numpy()
+        y_probs = torch.cat(all_probs).numpy()
         y_true = torch.cat(all_labels).numpy()
 
-        val_micro_f1 = f1_score(y_true, y_pred, average="micro", zero_division=0)
-        val_macro_f1 = f1_score(y_true, y_pred, average="macro", zero_division=0)
+        thresholds = [0.05, 0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40, 0.45, 0.50]
+
+        best_threshold = 0.5
+        val_micro_f1 = 0.0
+        val_macro_f1 = 0.0
+
+        for threshold in thresholds:
+            y_pred = (y_probs > threshold).astype(int)
+
+            micro_f1 = f1_score(y_true, y_pred, average="micro", zero_division=0)
+            macro_f1 = f1_score(y_true, y_pred, average="macro", zero_division=0)
+
+            if micro_f1 > val_micro_f1:
+                val_micro_f1 = micro_f1
+                val_macro_f1 = macro_f1
+                best_threshold = threshold
 
         print(
             f"Epoch {epoch + 1}/{epochs} | "
             f"Train: {train_loss:.4f} | "
             f"Val Loss: {val_loss:.4f} | "
-            f"Val Micro F1 {val_micro_f1:.4f} | "
+            f"Best Threshold: {best_threshold:.2f} | "
+            f"Val Micro F1: {val_micro_f1:.4f} | "
             f"Val Macro F1: {val_macro_f1:.4f}"
         )
 
@@ -108,11 +123,22 @@ def train():
         if val_micro_f1 > best_val_f1:
             best_val_f1 = val_micro_f1
             best_val_loss = val_loss
-            torch.save(model.state_dict(), "best_poster_cnn.pth")
+
+            torch.save({
+                "model_state_dict": model.state_dict(),
+                "threshold": best_threshold,
+                "val_micro_f1": val_micro_f1,
+                "val_loss": val_loss,
+            }, "best_poster_cnn.pth")      
+
             print("Saved best model")
 
-    print(f"Best Model — Val Loss: {best_val_loss:.4f} | Val F1: {best_val_f1:.4f}")
-
+    print(
+        f"Best Model | "
+        f"Val Micro F1: {best_val_f1:.4f} | "
+        f"Val Loss: {best_val_loss:.4f} | "
+        f"Threshold: {best_saved_threshold:.2f}"
+    )
 
 if __name__ == "__main__":
     train()
