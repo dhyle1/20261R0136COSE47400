@@ -101,10 +101,14 @@ full_train_dataset = MoviePosterDataset(train_df, preprocess, IMG_FOLDER)
 train_size = int(0.8 * len(full_train_dataset))
 val_size = len(full_train_dataset) - train_size
 
+generator = torch.Generator().manual_seed(42)
 train_dataset, val_dataset = random_split(
     full_train_dataset,
-    [train_size, val_size]
+    [train_size, val_size],
+    generator=generator
 )
+
+torch.save(val_dataset.indices, "val_indices.pt")
 
 train_loader = DataLoader(
     train_dataset,
