@@ -87,10 +87,11 @@ with torch.no_grad():
         logits = 100.0 * img_feature @ text_feature.T 
 
         all_logits.append(logits[0].cpu().numpy())
-all_logits = np.array(all_logits)
+all_logits = torch.tensor(np.array(all_logits))
+all_probs = torch.sigmoid(all_logits).numpy() # apply sigmoid
 
 # top3
-top3_indices = np.argsort(all_logits, axis=1)[:, -3:]
+top3_indices = np.argsort(all_probs, axis=1)[:, -3:]
 
 top3_correct = 0
 
@@ -109,7 +110,7 @@ threshold_candidates = np.arange(0.05, 0.55, 0.05)
 best_macro = 0
 best_preds = None
 for threshold in threshold_candidates:
-    preds = (all_logits > threshold).astype(int)
+    preds = (all_probs > threshold).astype(int)
     macro = f1_score(ture_label, preds, average="macro")
     if macro > best_macro:
         best_macro = macro
