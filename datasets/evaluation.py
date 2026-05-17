@@ -9,6 +9,7 @@ from sklearn.metrics import f1_score, classification_report
 import numpy as np
 from tqdm import tqdm
 
+VAL_CSV = 'train_annotations2.csv'
 TEST_CSV = "./test_annotations.csv"
 LABEL_MAP = "./genre_label_map.json"
 IMG_FOLDER = "./processed_posters"
@@ -48,11 +49,11 @@ model.load_state_dict(torch.load(TRAINED_MODEL_PATH, map_location=device))
 model.eval()
 print(f"model loaded")
 
-test_df = pd.read_csv(TEST_CSV)
+val_df = pd.read_csv(VAL_CSV, encoding='latin-1')
 
 # filters out rows with missing poster files
-test_df = test_df[
-    test_df["img_filename"].apply(
+val_df = val_df[
+    val_df["img_filename"].apply(
         lambda filename: os.path.exists(os.path.join(IMG_FOLDER, filename))
     )
 ].reset_index(drop=True)
@@ -60,7 +61,7 @@ test_df = test_df[
 print(f'loading custom prompts from: {PROMPT_FILE}')
 with open(PROMPT_FILE, "r", encoding="utf-8") as f:
     prompt_dict = json.load(f)
-print(f"test set: {len(test_df)} samples")
+print(f"val set: {len(val_df)} samples")
 text_prompt = []
 for genre in TARGET_GENRES:
     if genre in prompt_dict:
@@ -72,10 +73,10 @@ for genre in TARGET_GENRES:
 text_tokens = clip.tokenize(text_prompt).to(device)
 
 print(f"inferencing...")
-ture_label = test_df[TARGET_GENRES].values
+ture_label = val_df[TARGET_GENRES].values
 all_logits = []
 with torch.no_grad():
-    for index, row in tqdm(test_df.iterrows(), total=len(test_df)):
+    for index, row in tqdm(val_df.iterrows(), total=len(val_df)):
         img_path = os.path.join(IMG_FOLDER, row["img_filename"])
         img = Image.open(img_path).convert("RGB")
         img_input = preprocess(img).unsqueeze(0).to(device)
