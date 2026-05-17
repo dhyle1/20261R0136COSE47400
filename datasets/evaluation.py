@@ -49,6 +49,14 @@ model.eval()
 print(f"model loaded")
 
 test_df = pd.read_csv(TEST_CSV)
+
+# filters out rows with missing poster files
+test_df = test_df[
+    test_df["img_filename"].apply(
+        lambda filename: os.path.exists(os.path.join(IMG_FOLDER, filename))
+    )
+].reset_index(drop=True)
+
 print(f'loading custom prompts from: {PROMPT_FILE}')
 with open(PROMPT_FILE, "r", encoding="utf-8") as f:
     prompt_dict = json.load(f)
@@ -81,7 +89,23 @@ with torch.no_grad():
         all_logits.append(logits[0].cpu().numpy())
 all_logits = np.array(all_logits)
 
-threshold_candidates = np.array([0.05, 0.1, 0.15, 0.2])
+# top3
+top3_indices = np.argsort(all_logits, axis=1)[:, -3:]
+
+top3_correct = 0
+
+for i, true_row in enumerate(ture_label):
+    true_indices = np.where(true_row == 1)[0]
+
+    if any(idx in top3_indices[i] for idx in true_indices):
+        top3_correct += 1
+
+top3_accuracy = top3_correct / len(ture_label)
+
+print(f"Top-3 Accuracy: {top3_accuracy:.4f}")
+
+# threshold search
+threshold_candidates = np.arange(0.05, 0.55, 0.05)
 best_macro = 0
 best_preds = None
 for threshold in threshold_candidates:
@@ -97,17 +121,3 @@ macro_f1 = f1_score(ture_label, best_preds, average="macro")
 micro_f1 = f1_score(ture_label, best_preds, average="micro")
 print(f"Final Maco_f1: {round(macro_f1, 4)}")
 print(f"Final Mico_f1: {round(micro_f1, 4)}")
-        
-        img_feature /= img_feature.norm(dim=-1, keepdim=True)
-        text_feature /= text_feature.norm(dim=-1, keepdim=True)
-        logits = 100.0 * img_feature @ text_feature.T 
-
-        threshold = 0.15
-        pred = (logits[0].cpu().numpy() > threshold).astype(int)
-        pred_label.append(pred)
-pred_label = np.array(pred_label)
-
-macro_f1 = f1_score(ture_label, pred_label, average="macro")
-micro_f1 = f1_score(ture_label, pred_label, average="micro")
-print(f"Maco_f1: {round(macro_f1, 4)}")
-print(f"Mico_f1: {round(micro_f1, 4)}")
