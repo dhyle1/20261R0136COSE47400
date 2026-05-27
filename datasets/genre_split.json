@@ -1,0 +1,31 @@
+{
+  "train_genres": [
+    "Sport",
+    "Biography",
+    "Romance",
+    "Animation",
+    "Adventure",
+    "Thriller",
+    "Music",
+    "War",
+    "Documentary",
+    "Mystery",
+    "Action",
+    "Comedy",
+    "Sci-Fi",
+    "History",
+    "Western",
+    "Musical"
+  ],
+  "retained_genres": [
+    "Short",
+    "Family",
+    "Horror",
+    "Fantasy",
+    "Drama",
+    "Crime",
+    "Film-Noir"
+  ],
+  "total_genres": 23,
+  "split_ratio": "7:3"
+}
