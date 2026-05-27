@@ -5,10 +5,40 @@ import pandas as pd
 import json
 from PIL import Image
 from peft import LoraConfig, get_peft_model
-from sklearn.metrics import f1_score
-from torch.utils.data import random_split, DataLoader
 from tqdm import tqdm
 import torch.nn.functional as F 
+
+def count_model_parameters(model):
+    total_params = 0
+    trainable_params = 0
+    non_trainable_params = 0
+    
+    for param in model.parameters():
+        num_params = param.numel()
+        total_params += num_params
+        if param.requires_grad:
+            trainable_params += num_params
+        else:
+            non_trainable_params += num_params
+    def format_params_size(num_params):
+        bytes_ = num_params * 4
+        if bytes_ < 1024:
+            return f'{bytes_}B'
+        elif bytes_ < 1024 * 1024:
+            return f'{bytes_ / 1024:.4f}KB'
+        elif bytes_ < 1024 * 1024 * 1024:
+            return f'{bytes_ / (1024*1024):.4f}MB'
+        else:
+            return f'{bytes_ / (1024 * 1024 * 1024):.4f}GB'
+    return{
+        'total_params':total_params,
+        'trainable_params':trainable_params,
+        'nontrainable_params':non_trainable_params,
+        'total_params_size':format_params_size(total_params),
+        'nontrainable_params_size':format_params_size(non_trainable_params),
+        'proportion_of trainable_params':f'{trainable_params / total_params:.4f}'
+    }
+        
 
 print(f"run start")
 TRAIN_CSV = "./train_annotations2.csv"
@@ -17,8 +47,14 @@ IMG_FOLDER = "./processed_posters"
 PROMPT_FILE = "./clip_prompt_base.json"
 SAVE_MODLE_PATH = "./trained_clip_lora"
 
-# create model save directory if missing
-os.makedirs(SAVE_MODLE_PATH, exist_ok=True)
+GENRE_SPLIT = "./genre_split.json"
+with open(GENRE_SPLIT, "r", encoding="utf-8") as f:
+    genre_split = json.load(f)
+train_genres = genre_split["train_genres"]
+retained_genres = genre_split["retained_genres"]
+
+print(f"train genres({len(train_genres)}): {train_genres}")
+print(f"retained genres({len(retained_genres)}): {retained_genres}")
 
 MODEL_NAME = "ViT-B/16"
 BATCH_SIZE = 8
@@ -51,6 +87,11 @@ lora_config = LoraConfig(
     bias="none",
 )
 model = get_peft_model(model, lora_config)
+
+param_stats = count_model_parameters(model)
+
+for k, v in param_stats.items():
+    print(f"{k}: {v}")
 model.print_trainable_parameters()
 print("CLIP ViT-B/16 + LoRA configured")
 
@@ -65,7 +106,7 @@ for genre in TARGET_GENRES:
     else:
         default_prompt = f"a movie poster for a {genre} film"
         text_prompt.append(default_prompt)
-        print(f'warning: No custiom prompt for [{genre}], using default')
+        print(f'warning: No custom prompt for [{genre}], using default')
 text_tokens = clip.tokenize(text_prompt).to(device)
 print(f"custom prompts loaded successfully")
 
@@ -75,11 +116,6 @@ class MoviePosterDataset(torch.utils.data.Dataset):
         self.preprocess = preprocess
         self.img_folder = img_folder
 
-        # filters out rows with missing image files
-        self.df = self.df[
-            self.df["img_filename"].apply(self._image_exists)
-        ].reset_index(drop=True)
-
     def __len__(self):
         return len(self.df)
     
@@ -88,41 +124,28 @@ class MoviePosterDataset(torch.utils.data.Dataset):
         img_path = os.path.join(self.img_folder, row["img_filename"])
         img = Image.open(img_path).convert("RGB")
         img_tensor = self.preprocess(img)
-        label_tensor = torch.tensor(row[TARGET_GENRES].values.astype(float), dtype = torch.float32)
-        return img_tensor, label_tensor
     
-    def _image_exists(self, filename):
-        path = os.path.join(self.img_folder, filename)
-        return os.path.exists(path)
+        label_tensor = torch.tensor(row[TARGET_GENRES].values.astype(float), dtype=torch.float32)
+    
+        return img_tensor, label_tensor
 
-# split train / validation
-full_train_dataset = MoviePosterDataset(train_df, preprocess, IMG_FOLDER)
-
-train_size = int(0.8 * len(full_train_dataset))
-val_size = len(full_train_dataset) - train_size
-
-train_dataset, val_dataset = random_split(
-    full_train_dataset,
-    [train_size, val_size]
-)
-
-train_loader = DataLoader(
+train_dataset = MoviePosterDataset(train_df, preprocess, IMG_FOLDER)
+train_loader = torch.utils.data.DataLoader(
     train_dataset,
     batch_size=BATCH_SIZE,
     shuffle=True,
     num_workers=4
 )
 
-val_loader = DataLoader(
-    val_dataset,
-    batch_size=BATCH_SIZE,
-    shuffle=False,
-    num_workers=4
-)
-
-
-optimizer = torch.optim.Adam(model.parameters(), lr=LEARNING_RATE, weight_decay=0.01)
-scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=EPOCHS)
+optimizer = torch.optim.AdamW(
+    model.parameters(), 
+    lr=LEARNING_RATE, 
+    weight_decay=0.01
+    )
+scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(
+    optimizer, 
+    T_max=EPOCHS
+    )
 class_count = train_df[TARGET_GENRES].sum().values
 class_count = torch.tensor(class_count).clamp(min=1)
 class_weight = torch.tensor(
@@ -132,30 +155,33 @@ class_weight = torch.tensor(
 loss_fn = torch.nn.BCEWithLogitsLoss(pos_weight=class_weight)
 print(f"start training...")
 
-with torch.no_grad():
-    text_features = model.encode_text(text_tokens)
-    text_features = text_features / text_features.norm(dim=-1, keepdim=True)
-    
-best_val_f1 = 0.0
 best_loss = float("inf")
-best_model_path = None
+model.train()
 
 for epoch in range(EPOCHS):
-    model.train()
     total_loss = 0
-
     pbar = tqdm(train_loader, desc=f"Epoch {epoch + 1}/{EPOCHS}")
     for batch_imgs, batch_labels in pbar:
         batch_imgs = batch_imgs.to(device)
         batch_labels = batch_labels.to(device)
         optimizer.zero_grad()
 
-        image_features = model.encode_image(batch_imgs)
-        text_features = model.encode_text(text_tokens)
+        image_features = model.encode_image(batch_imgs).float()
+        text_features = model.encode_text(text_tokens).float()
         image_features = image_features / image_features.norm(dim=-1, keepdim=True)
         text_features = text_features / text_features.norm(dim=-1, keepdim=True)
         logits = 100.0 * image_features @ text_features.T
+        loss_fn = torch.nn.BCEWithLogitsLoss(reduction="none")
         loss = loss_fn(logits, batch_labels)
+
+        mask = torch.ones_like(batch_labels)
+        for genre in retained_genres:
+            genre_idx = TARGET_GENRES.index(genre)
+            mask[:, genre_idx] = 0.0
+
+        loss = loss * mask
+
+        loss = loss.sum() / (mask.sum() + 1e-8)   
 
         loss.backward()
         torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
@@ -164,54 +190,17 @@ for epoch in range(EPOCHS):
         pbar.set_postfix({"Loss":round(loss.item(), 4)})
     
     scheduler.step()
-
     avg_loss = total_loss / len(train_loader)
+    print(f'epoch{epoch + 1} finished. AVG_LOSS = {avg_loss}')
 
-    # validation
-    model.eval()
+    epoch_save_path = os.path.join(SAVE_MODLE_PATH, f'model_epoch_{epoch + 1}')
+    model.save_pretrained(epoch_save_path)
+    torch.save(model.state_dict(), os.path.join(SAVE_MODLE_PATH, f'model_epoch_{epoch + 1}.pt'))
 
-    all_preds = []
-    all_labels = []
-
-    with torch.no_grad():
-        for images, labels in val_loader:
-            images = images.to(device)
-            labels = labels.to(device)
-
-            image_features = model.encode_image(images)
-            text_features = model.encode_text(text_tokens)
-
-            image_features = image_features / image_features.norm(dim=-1, keepdim=True)
-            text_features = text_features / text_features.norm(dim=-1, keepdim=True)
-
-            logits = 100.0 * image_features @ text_features.T
-            probs = torch.sigmoid(logits)
-            preds = (probs > 0.5).float()
-
-            all_preds.append(preds.cpu())
-            all_labels.append(labels.cpu())
-
-    y_pred = torch.cat(all_preds).numpy()
-    y_true = torch.cat(all_labels).numpy()
-
-    val_micro_f1 = f1_score(y_true, y_pred, average="micro", zero_division=0)
-    val_macro_f1 = f1_score(y_true, y_pred, average="macro", zero_division=0)
-
-    print(
-        f"Epoch {epoch + 1}/{EPOCHS} | "
-        f"Avg Loss: {avg_loss:.4f} | "
-        f"Val Micro F1: {val_micro_f1:.4f} | "
-        f"Val Macro F1: {val_macro_f1:.4f}"
-    )
-
-
-    epoch_save_path = os.path.join(SAVE_MODLE_PATH, f'model_epoch_{epoch + 1}.pt')
-    torch.save(model.state_dict(), epoch_save_path)
-
-    if val_micro_f1 > best_val_f1:
-        best_val_f1 = val_micro_f1
+    if avg_loss < best_loss:
         best_loss = avg_loss
-        best_model_path = os.path.join(SAVE_MODLE_PATH,"model_best.pt")
-        torch.save(model.state_dict(), best_model_path)
-        print(f"Best model updated(Train Loss : {round(best_loss, 4)}) | Val F1: {round(best_val_f1, 4)}")
-        print(f"Best model saved to: {best_model_path}")
+        best_model_path = os.path.join(SAVE_MODLE_PATH,"model_best_clip+lora")
+        model.save_pretrained(best_model_path)
+        torch.save(model.state_dict(), os.path.join(SAVE_MODLE_PATH, "model_best_clip+lora.pt"))
+        print(f"best model updated(Loss : {round(best_loss, 4)})")
+    print(f"Best model saved to: {best_model_path}")
