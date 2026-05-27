@@ -5,14 +5,20 @@ import json
 import pandas as pd 
 from PIL import Image
 from peft import LoraConfig, get_peft_model
-from sklearn.metrics import f1_score, classification_report
+from sklearn.metrics import f1_score, classification_report, precision_score, recall_score
 import numpy as np
 from tqdm import tqdm
+import torch.nn as nn
 
+RUN_MODEL = 'full_finetune' #choice u're model
 TEST_CSV = "./test_annotations.csv"
 LABEL_MAP = "./genre_label_map.json"
+GENRE_SPLIT = "./genre_split.json"
 IMG_FOLDER = "./processed_posters"
-TRAINED_MODEL_PATH = "./trained_clip_lora/model_best.pt"
+TRAINED_MODEL_PATH = {
+    "lora": "./trained_clip_lora/model_best_clip+lora.pt",
+    'full_finetune': "./model_best_FT.pt"
+    }
 MODEL_NAME = "ViT-B/16"
 PROMPT_FILE = "./clip_prompt_base.json"
 BATCH_SIZE = 8
@@ -23,102 +29,132 @@ LORA_ALPHA = 64
 SEED = 42
 torch.manual_seed(SEED)
 device = "cuda"
+criterion = nn.BCEWithLogitsLoss()
 
 print("Loading model...")
 with open(LABEL_MAP, "r", encoding="utf-8") as f:
     label_map = json.load(f)
-label2id = label_map["label2id"]
-id2label = label_map["id2label"]
-TARGET_GENRES = list(label2id.keys())
+TARGET_GENRES = list(label_map['label2id'].keys())
+
+with open(GENRE_SPLIT, "r", encoding="utf-8") as f:
+    genre_split = json.load(f)
+train_genres = genre_split["train_genres"]
+retained_genres = genre_split["retained_genres"]
+
+train_indices = [TARGET_GENRES.index(g) for g in train_genres]
+retained_indices = [TARGET_GENRES.index(g) for g in retained_genres]
+print(f"train genres({len(train_genres)}): {train_genres}")
+print(f"retained genres({len(retained_genres)}): {retained_genres}\n")
 
 model, preprocess = clip.load("ViT-B/16")
-for param in model.parameters():
-    param.required_grad = False
-
-lora_config = LoraConfig(
-    r=LORA_R,
-    lora_alpha=LORA_ALPHA,
-    target_modules=["attn"],
-    lora_dropout=0.1,
-    bias="none"
-)
-
-model = get_peft_model(model, lora_config)
-model.load_state_dict(torch.load(TRAINED_MODEL_PATH, map_location=device))
-model.eval()
-print(f"model loaded")
-
-test_df = pd.read_csv(TEST_CSV)
-
-# filters out rows with missing poster files
-test_df = test_df[
-    test_df["img_filename"].apply(
-        lambda filename: os.path.exists(os.path.join(IMG_FOLDER, filename))
+if RUN_MODEL == 'lora':
+    for param in model.parameters():
+        param.requires_grad = False
+    lora_config = LoraConfig(
+        r=LORA_R,
+        lora_alpha=LORA_ALPHA,
+        target_modules=["attn"],
+        lora_dropout=0.1,
+        bias="none"
     )
-].reset_index(drop=True)
+    model = get_peft_model(model, lora_config)
+    model.load_state_dict(torch.load(TRAINED_MODEL_PATH["lora"], map_location=device, weights_only=True))
+elif RUN_MODEL == 'full_finetune':
+    for param in model.parameters():
+        param.requires_grad = True
+    model.load_state_dict(torch.load(TRAINED_MODEL_PATH["full_finetune"], map_location=device, weights_only=True))
+
+model.eval()
+criterion = nn.BCEWithLogitsLoss()
+
+def count_params(model):
+    total = sum(p.numel() for p in model.parameters())
+    trainable = sum(p.numel() for p in model.parameters() if p.requires_grad)
+    return total, trainable
+total_params, trainable_params = count_params(model)
+print(f'total parameters:{total_params:,}')
+print(f'nums of trainable parameters:{trainable_params:,}')
+print(f'trainable parameter proportion:{trainable_params / total_params:.4}')
 
 print(f'loading custom prompts from: {PROMPT_FILE}')
 with open(PROMPT_FILE, "r", encoding="utf-8") as f:
     prompt_dict = json.load(f)
-print(f"test set: {len(test_df)} samples")
-text_prompt = []
-for genre in TARGET_GENRES:
-    if genre in prompt_dict:
-        text_prompt.append(prompt_dict[genre])
-    else:
-        default_prompt = f"a movie poster for a {genre} film"
-        text_prompt.append(default_prompt)
-        print(f'warning: No custiom prompt for [{genre}], using default')
+text_prompt = [prompt_dict.get(g,f'a movie poster for a {g} film') for g in TARGET_GENRES]
 text_tokens = clip.tokenize(text_prompt).to(device)
+test_df = pd.read_csv(TEST_CSV)
+print(f"test set: {len(test_df)} samples")
+print(f'model starts reasoning...')
 
-print(f"inferencing...")
-ture_label = test_df[TARGET_GENRES].values
 all_logits = []
+all_label =[]
+total_loss = 0.0
 with torch.no_grad():
-    for index, row in tqdm(test_df.iterrows(), total=len(test_df)):
-        img_path = os.path.join(IMG_FOLDER, row["img_filename"])
-        img = Image.open(img_path).convert("RGB")
-        img_input = preprocess(img).unsqueeze(0).to(device)
-        img_feature = model.encode_image(img_input)
-        text_feature = model.encode_text(text_tokens)
-        
+    for _, row in tqdm(test_df.iterrows(), total=len(test_df)):
+        img_path = os.path.join(IMG_FOLDER, row['img_filename'])
+        img_input = preprocess(Image.open(img_path).convert('RGB')).unsqueeze(0).to(device)
+        img_feature = model.encode_image(img_input).float()
+        text_feature = model.encode_text(text_tokens).float()
         img_feature /= img_feature.norm(dim=-1, keepdim=True)
         text_feature /= text_feature.norm(dim=-1, keepdim=True)
-        logits = 100.0 * img_feature @ text_feature.T 
+        logits = 100.0 * img_feature @ text_feature.T
+        label = torch.tensor(row[TARGET_GENRES].values.astype(np.float32)).unsqueeze(0).to(device)
+        loss = criterion(logits, label)
+        total_loss += loss.item()
 
-        all_logits.append(logits[0].cpu().numpy())
-all_logits = torch.tensor(np.array(all_logits))
-all_probs = torch.sigmoid(all_logits).numpy() # apply sigmoid
+        all_logits.append(logits.cpu().numpy().squeeze())
+        all_label.append(row[TARGET_GENRES].values.astype(np.float32))
 
-# top3
-top3_indices = np.argsort(all_probs, axis=1)[:, -3:]
+all_logits = np.array(all_logits)
+all_label = np.array(all_label)
 
-top3_correct = 0
+best_threshold = 0.05
+preds = (all_logits > best_threshold).astype(int)
+macro_f1 = f1_score(all_label, preds, average="macro")
+micro_f1 = f1_score(all_label, preds, average="micro")
 
-for i, true_row in enumerate(ture_label):
-    true_indices = np.where(true_row == 1)[0]
+train_f1 = f1_score(all_label[:,train_indices], preds[:,train_indices], average='macro')
+retained_f1 = f1_score(all_label[:, retained_indices], preds[:, retained_indices], average='macro')
 
-    if any(idx in top3_indices[i] for idx in true_indices):
-        top3_correct += 1
+overall_logit_mean = all_logits.mean()
+retained_logit_mean = all_logits[:, retained_indices].mean()
 
-top3_accuracy = top3_correct / len(ture_label)
+correct_logit = np.mean([all_logits[i][all_label[i]==1].mean() for i in range(len(all_logits)) if sum(all_label[i]) > 0])
+wrong_logit = np.mean([all_logits[i][all_label[i]==0].mean() for i in range(len(all_logits))])
+logits_gap = correct_logit - wrong_logit
 
-print(f"Top-3 Accuracy: {top3_accuracy:.4f}")
 
-# threshold search
-threshold_candidates = np.arange(0.05, 0.55, 0.05)
-best_macro = 0
-best_preds = None
-for threshold in threshold_candidates:
-    preds = (all_probs > threshold).astype(int)
-    macro = f1_score(ture_label, preds, average="macro")
-    if macro > best_macro:
-        best_macro = macro
-        best_threshold = threshold
-        best_preds = preds
-print(f'best threshold: {best_threshold}')
-print(f"best macro_f1: {round(best_macro, 4)}")
-macro_f1 = f1_score(ture_label, best_preds, average="macro")
-micro_f1 = f1_score(ture_label, best_preds, average="micro")
-print(f"Final Maco_f1: {round(macro_f1, 4)}")
-print(f"Final Mico_f1: {round(micro_f1, 4)}")
+per_class_precision = precision_score(all_label, preds, average=None, zero_division=0)
+per_class_recall = recall_score(all_label, preds, average=None, zero_division=0)
+per_class_f1 = f1_score(all_label, preds, average=None, zero_division=0)
+per_class_support = np.sum(all_label, axis=0)
+
+per_genre_df = pd.DataFrame({
+    'genre':TARGET_GENRES,
+    'genres type':['train_genres' if g in train_genres else 'retain_genres' for g in TARGET_GENRES],
+    'num of sample':per_class_support,
+    'precision':per_class_precision.round(4),
+    'recall': per_class_recall.round(4),
+    'F1':per_class_f1.round(4)
+    })
+per_genre_df = per_genre_df.sort_values(by='num of sample', ascending=True).reset_index(drop=True)
+
+train_group = per_genre_df[per_genre_df["genres type"] == "train_genres"]
+retained_group = per_genre_df[per_genre_df["genres type"] == "retained_genres"]
+
+print(f'model: {RUN_MODEL}')
+print(f'macro f1:{macro_f1:.4f}')
+print(f'micro f1:{micro_f1:.4f}')
+print(f'training category f1:{train_f1:.4f}')
+print(f'retained category memory f1:{retained_f1:.4f}')
+print(f'average test loss:{total_loss/len(test_df):.4f}')
+print(f'overall average logit:{overall_logit_mean:.4f}')
+print(f'retain category average logit:{retained_logit_mean:.4f}')
+print(f'correct logit:{correct_logit:.4f}')
+print(f'wrong logits:{wrong_logit:.4f}')
+print(f'correct-wrong logit gap:{logits_gap:.4f}')
+print(f"{'genre':<15} {'genres type':<10} {'num of sample':<8} {'precision':<10} {'recall':<20} {'F1':<10}")
+for _, row in per_genre_df.iterrows():
+    mark = "! " if row["num of sample"] < 10 else "   "
+    print(f"{mark}{row['genre']:<15} {row['genres type']:<15} {row['num of sample']:<10} {row['precision']:<10} {row['recall']:<20} {row['F1']:<10}")
+print(f"train genre avg: precision={train_group['precision'].mean():.4f}, recall={train_group['recall'].mean():.4f}, F1={train_group['F1'].mean():.4f}")
+print(f"retrained genre avg: precision={retained_group['precision'].mean():.4f}, recall={retained_group['recall'].mean():.4f}, F1={retained_group['F1'].mean():.4f}")
