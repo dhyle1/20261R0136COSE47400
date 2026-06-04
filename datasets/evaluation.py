@@ -9,15 +9,17 @@ from sklearn.metrics import f1_score, classification_report, precision_score, re
 import numpy as np
 from tqdm import tqdm
 import torch.nn as nn
+import torch.nn.functional as F
 
-RUN_MODEL = 'full_finetune' #choice u're model
+RUN_MODEL = 'ft_enhanced' #choice u're model: 'lora' | 'full_finetune' | 'ft_enhanced'
 TEST_CSV = "./test_annotations.csv"
 LABEL_MAP = "./genre_label_map.json"
 GENRE_SPLIT = "./genre_split.json"
 IMG_FOLDER = "./processed_posters"
 TRAINED_MODEL_PATH = {
     "lora": "./trained_clip_lora/model_best_clip+lora.pt",
-    'full_finetune': "./model_best_FT.pt"
+    "full_finetune": "./trained_clip_ft/model_best_ft.pt",
+    "ft_enhanced": "./trained_clip_ft_enhanced/model_best_ft_enhanced.pt"
     }
 MODEL_NAME = "ViT-B/16"
 PROMPT_FILE = "./clip_prompt_base.json"
@@ -29,7 +31,6 @@ LORA_ALPHA = 64
 SEED = 42
 torch.manual_seed(SEED)
 device = "cuda"
-criterion = nn.BCEWithLogitsLoss()
 
 print("Loading model...")
 with open(LABEL_MAP, "r", encoding="utf-8") as f:
@@ -63,9 +64,36 @@ elif RUN_MODEL == 'full_finetune':
     for param in model.parameters():
         param.requires_grad = True
     model.load_state_dict(torch.load(TRAINED_MODEL_PATH["full_finetune"], map_location=device, weights_only=True))
+elif RUN_MODEL == 'ft_enhanced':
+    for param in model.parameters():
+        param.requires_grad = True
+    model.load_state_dict(torch.load(TRAINED_MODEL_PATH["ft_enhanced"], map_location=device, weights_only=True))
 
 model.eval()
-criterion = nn.BCEWithLogitsLoss()
+
+EVAL_GAMMA = 2.0  # FocalLoss gamma for eval (set to match training best_gamma)
+
+class FocalLoss(nn.Module):
+    def __init__(self, alpha=None, gamma=2.0, reduction='mean'):
+        super().__init__()
+        self.alpha = alpha
+        self.gamma = gamma
+        self.reduction = reduction
+
+    def forward(self, logits, targets):
+        bce_loss = F.binary_cross_entropy_with_logits(logits, targets, reduction='none')
+        probs = torch.sigmoid(logits)
+        p_t = targets * probs + (1 - targets) * (1 - probs)
+        focal_weight = (1 - p_t) ** self.gamma
+        loss = focal_weight * bce_loss
+        if self.alpha is not None:
+            alpha_t = targets * self.alpha + (1 - targets) * 1.0
+            loss = alpha_t * loss
+        if self.reduction == 'mean':
+            return loss.mean()
+        return loss
+
+criterion = FocalLoss(gamma=EVAL_GAMMA, reduction='mean')
 
 def count_params(model):
     total = sum(p.numel() for p in model.parameters())
@@ -107,8 +135,23 @@ with torch.no_grad():
 all_logits = np.array(all_logits)
 all_label = np.array(all_label)
 
-best_threshold = 0.05
-preds = (all_logits > best_threshold).astype(int)
+thresholds = np.arange(-5.0, 0.0, 0.01)
+best_macro = 0
+best_threshold = 0
+best_preds = None
+
+for threshold in thresholds:
+    preds = (all_logits > threshold).astype(int)
+    macro = f1_score(all_label, preds, average="macro", zero_division=0)
+    if macro > best_macro:
+        best_macro = macro
+        best_threshold = threshold
+        best_preds = preds
+
+print(f"best_threshold: {best_threshold:.4f}")
+print(f"best_Macro F1: {best_macro:.4f}")
+
+preds = best_preds
 macro_f1 = f1_score(all_label, preds, average="macro")
 micro_f1 = f1_score(all_label, preds, average="micro")
 
