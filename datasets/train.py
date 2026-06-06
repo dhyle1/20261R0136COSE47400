@@ -152,7 +152,7 @@ print("CLIP ViT-B/16 + LoRA configured")
 # 5. 프롬프트 토큰화 및 데이터셋 설정
 # ==========================================
 train_df = pd.read_csv(TRAIN_CSV)
-PROMPT_BLEND = 0.0  # 纯泛化 prompt, 锚点在 CLIP 常识位置
+PROMPT_BLEND = 0.4  # logit-level blend: visual vs generic weight
 
 print(f'loading visual prompts from: {PROMPT_FILE}')
 with open(PROMPT_FILE, "r", encoding="utf-8") as f:
@@ -171,7 +171,7 @@ for genre in TARGET_GENRES:
 
 visual_tokens = clip.tokenize(visual_prompts).to(device)
 generic_tokens = clip.tokenize(generic_prompts).to(device)
-print(f"prompts loaded: blend={PROMPT_BLEND} (visual × {PROMPT_BLEND} + generic × {1-PROMPT_BLEND})")
+print(f"prompts loaded: blend={PROMPT_BLEND} (logit-level: visual × {PROMPT_BLEND} + generic × {1-PROMPT_BLEND})")
 
 class MoviePosterDataset(torch.utils.data.Dataset):
     def __init__(self, df, preprocess, img_folder):
@@ -250,16 +250,18 @@ for epoch in range(EPOCHS):
         # CLIP Feature 추출 및 정규화(L2 Norm)
         image_features = model.encode_image(batch_imgs).float()
 
-        # Blended text anchor: visual prompt + generic prompt
+        # Text anchors: encode both, normalize separately (logit-level blend)
         vis_text_feat = model.encode_text(visual_tokens).float()
         gen_text_feat = model.encode_text(generic_tokens).float()
-        text_features = PROMPT_BLEND * vis_text_feat + (1 - PROMPT_BLEND) * gen_text_feat
 
         image_features = image_features / image_features.norm(dim=-1, keepdim=True)
-        text_features = text_features / text_features.norm(dim=-1, keepdim=True)
+        vis_text_feat = vis_text_feat / vis_text_feat.norm(dim=-1, keepdim=True)
+        gen_text_feat = gen_text_feat / gen_text_feat.norm(dim=-1, keepdim=True)
 
-        # Logits 계산 (Cosine Similarity * 100)
-        logits = 100.0 * image_features @ text_features.T
+        # Logit-level blend: each anchor votes independently, then weight
+        logits_vis = 100.0 * image_features @ vis_text_feat.T
+        logits_gen = 100.0 * image_features @ gen_text_feat.T
+        logits = PROMPT_BLEND * logits_vis + (1 - PROMPT_BLEND) * logits_gen
 
         # 마스크 행렬 생성 (retained_genres에 해당하는 클래스는 손실 계산 제외)
         mask = torch.ones_like(batch_labels)
