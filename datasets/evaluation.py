@@ -11,7 +11,7 @@ from tqdm import tqdm
 import torch.nn as nn
 import torch.nn.functional as F
 
-RUN_MODEL = 'lora' #choice u're model: 'lora' | 'full_finetune' | 'ft_enhanced'
+RUN_MODEL = 'full_finetune' #choice u're model: 'lora' | 'full_finetune' | 'ft_enhanced'
 TEST_CSV = "./test_annotations2.csv"
 LABEL_MAP = "./genre_label_map.json"
 GENRE_SPLIT = "./genre_split.json"

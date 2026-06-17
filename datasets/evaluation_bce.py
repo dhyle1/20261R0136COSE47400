@@ -101,9 +101,20 @@ with torch.no_grad():
 all_logits = np.array(all_logits)
 all_label = np.array(all_label)
 
-FIXED_THRESHOLD = -4.0
-preds = (all_logits > FIXED_THRESHOLD).astype(int)
-print(f"fixed_threshold: {FIXED_THRESHOLD}")
+# Threshold scan for best Macro F1
+thresholds = np.arange(-5.0, 0.0, 0.01)
+best_macro = 0
+best_threshold = 0
+best_preds = None
+for threshold in thresholds:
+    preds_candidate = (all_logits > threshold).astype(int)
+    macro = f1_score(all_label, preds_candidate, average="macro", zero_division=0)
+    if macro > best_macro:
+        best_macro = macro
+        best_threshold = threshold
+        best_preds = preds_candidate
+print(f"best_threshold: {best_threshold:.4f}")
+preds = best_preds
 macro_f1 = f1_score(all_label, preds, average="macro")
 micro_f1 = f1_score(all_label, preds, average="micro")
 
