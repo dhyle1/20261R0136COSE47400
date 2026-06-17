@@ -5,13 +5,13 @@ import pandas as pd
 import json
 from PIL import Image
 from tqdm import tqdm
-import torch.nn.functional as F 
+import torch.nn.functional as F
 
 def count_model_parameters(model):
     total_params = 0
     trainable_params = 0
     non_trainable_params = 0
-    
+
     for param in model.parameters():
         num_params = param.numel()
         total_params += num_params
@@ -37,7 +37,7 @@ def count_model_parameters(model):
         'nontrainable_params_size':format_params_size(non_trainable_params),
         'proportion_of trainable_params':f'{trainable_params / total_params:.4f}'
     }
-        
+
 
 print(f"run start")
 TRAIN_CSV = "./train_annotations2.csv"
@@ -73,7 +73,7 @@ TARGET_GENRES = list(label2id.keys())
 NUM_CLASSES = len(TARGET_GENRES)
 print(f'labels loaded:{NUM_CLASSES} genres')
 
-model, preprocess = clip.load("ViT-B/16",device=device)
+model, preprocess = clip.load("ViT-B/16", device=device)
 model = model.float()
 model.logit_scale.requires_grad = False
 for name, param in model.named_parameters():
@@ -109,15 +109,15 @@ class MoviePosterDataset(torch.utils.data.Dataset):
 
     def __len__(self):
         return len(self.df)
-    
+
     def __getitem__(self, index):
         row = self.df.iloc[index]
         img_path = os.path.join(self.img_folder, row["img_filename"])
         img = Image.open(img_path).convert("RGB")
         img_tensor = self.preprocess(img)
-    
+
         label_tensor = torch.tensor(row[TARGET_GENRES].values.astype(float), dtype=torch.float32)
-    
+
         return img_tensor, label_tensor
 
 train_dataset = MoviePosterDataset(train_df, preprocess, IMG_FOLDER)
@@ -129,22 +129,26 @@ train_loader = torch.utils.data.DataLoader(
 )
 
 optimizer = torch.optim.AdamW(
-    model.parameters(), 
-    lr=LEARNING_RATE, 
+    model.parameters(),
+    lr=LEARNING_RATE,
     weight_decay=0.01
     )
 scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(
-    optimizer, 
+    optimizer,
     T_max=EPOCHS
     )
 class_count = train_df[TARGET_GENRES].sum().values
 class_count = torch.tensor(class_count).clamp(min=1)
-class_weight = torch.tensor(
+class_weight_raw = torch.tensor(
     len(train_df) / (NUM_CLASSES * class_count),
     dtype=torch.float32
-).to(device)
-loss_fn = torch.nn.BCEWithLogitsLoss(pos_weight=class_weight)
-print(f"start training...")
+)
+class_weight = torch.sqrt(class_weight_raw).clamp(min=1.0).to(device)
+print(f"Class weight range: [{class_weight.min():.2f}, {class_weight.max():.2f}]")
+# BCEWithLogitsLoss — 与 preprocessing_bce.py 完全相同的损失函数
+# pos_weight 仅加权正样本，负样本权重恒为 1.0
+loss_fn = torch.nn.BCEWithLogitsLoss(pos_weight=class_weight, reduction='none')
+print(f"Using BCEWithLogitsLoss with pos_weight")
 
 best_loss = float("inf")
 best_model_path = os.path.join(SAVE_MODLE_PATH, "model_best_ft.pt")
@@ -163,7 +167,7 @@ for epoch in range(EPOCHS):
         image_features = image_features / image_features.norm(dim=-1, keepdim=True)
         text_features = text_features / text_features.norm(dim=-1, keepdim=True)
         logits = 100.0 * image_features @ text_features.T
-        
+
         loss = loss_fn(logits, batch_labels)
 
         mask = torch.ones_like(batch_labels)
@@ -173,14 +177,14 @@ for epoch in range(EPOCHS):
 
         loss = loss * mask
 
-        loss = loss.sum() / (mask.sum() + 1e-8)   
+        loss = loss.sum() / (mask.sum() + 1e-8)
 
         loss.backward()
         torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
         optimizer.step()
         total_loss += loss.item()
         pbar.set_postfix({"Loss":round(loss.item(), 4)})
-    
+
     scheduler.step()
     avg_loss = total_loss / len(train_loader)
     print(f'epoch{epoch + 1} finished. AVG_LOSS = {avg_loss}')
